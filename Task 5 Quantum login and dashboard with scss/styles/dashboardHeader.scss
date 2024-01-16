@@ -1,0 +1,64 @@
+@import './fonts';
+@import './variables';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+    background: $headerBackground;
+    opacity: 0.8;
+    background-image: url("../header\ pattern\ svg.svg");
+    mix-blend-mode: overlay;
+
+    #header-logo {
+        margin-left: 24px;
+        margin-top: 11px;
+        width: 134px;
+        height: 36px;
+    }
+
+    #profile-logo {
+        margin-right: 24px;
+        margin-left: 32px;
+    }
+
+    #announcement-logo {
+        margin-left: 32px;
+    }
+
+    .main-navbar>li {
+        list-style: none;
+        margin-right: 32px;
+    }
+
+    .main-navbar>li>a {
+        text-decoration: none;
+        text-align: center;
+        /* font: normal normal medium 14px/14px Quicksand; */
+        font-size: $mediumFont;
+        letter-spacing: 0px;
+        color: $textNavbar;
+        opacity: 1;
+    }
+    
+    #dashboard-link {
+        text-decoration: none;
+        text-align: center;
+        /* font: normal normal medium 14px/14px Quicksand; */
+        font-size: $mediumFont;
+        letter-spacing: 0px;
+        color: $pureWhiteColor;
+        opacity: 1;
+        padding-bottom: 14px;
+        border-bottom: 4px solid $pureWhiteColor;
+    }
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: end;
+    }   
+}
+#hamburger-menu-logo {
+    display: none;
+}
