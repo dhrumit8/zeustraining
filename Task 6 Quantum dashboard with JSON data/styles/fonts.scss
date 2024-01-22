@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Quicksand;
+    src: url(../QuicksandFont/Quicksand-VariableFont_wght.ttf);
+    src: url(../QuicksandFont/static/Quicksand-Bold.ttf);
+    src: url(../QuicksandFont/static/Quicksand-Light.ttf);
+    src: url(../QuicksandFont/static/Quicksand-Medium.ttf);
+    src: url(../QuicksandFont/static/Quicksand-Regular.ttf);
+    src: url(../QuicksandFont/static/Quicksand-SemiBold.ttf);
+}
+
+$smallFont: 12px;
+$mediumFont: 14px;
+$bigFont: 16px;
+$largeFont: 24px;

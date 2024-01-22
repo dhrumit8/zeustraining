@@ -1,0 +1,254 @@
+@font-face {
+  font-family: Quicksand;
+  src: url(../QuicksandFont/Quicksand-VariableFont_wght.ttf);
+  src: url(../QuicksandFont/static/Quicksand-Bold.ttf);
+  src: url(../QuicksandFont/static/Quicksand-Light.ttf);
+  src: url(../QuicksandFont/static/Quicksand-Medium.ttf);
+  src: url(../QuicksandFont/static/Quicksand-Regular.ttf);
+  src: url(../QuicksandFont/static/Quicksand-SemiBold.ttf);
+}
+body {
+  margin: 0%;
+  height: 100%;
+  font-family: Quicksand;
+}
+body .main-container {
+  display: flex;
+  flex-direction: column;
+}
+body .main-container .header {
+  height: 56px;
+  background: #25313F;
+  opacity: 0.8;
+  background-image: url("../header pattern svg.svg");
+  border-bottom: 2px solid #31b9e4;
+  mix-blend-mode: overlay;
+}
+body .main-container .header #header-logo {
+  margin-left: 24px;
+  margin-top: 11px;
+  width: 134px;
+  height: 36px;
+}
+body .main-container .login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EEEEEE;
+}
+body .main-container .login-container .content-container {
+  margin-top: 50px;
+  margin-bottom: 32px;
+  height: 550px;
+  width: 488px;
+  background-color: #FFFFFF;
+  border-top: 4px solid #3ac7ec;
+  align-items: center;
+}
+body .main-container .login-container .content-container .form-container {
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 20px;
+}
+body .main-container .login-container .content-container .form-container #back-logo {
+  height: 26px;
+  text-align: left;
+  display: inline;
+}
+body .main-container .login-container .content-container .form-container #login-heading {
+  /* font: normal normal medium 24px/28px Quicksand; */
+  display: inline;
+  margin-top: 0%;
+  margin-left: 62px;
+  font-size: 24px;
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+}
+body .main-container .login-container .content-container .form-container .login-form {
+  display: flex;
+  flex-direction: column;
+}
+body .main-container .login-container .content-container .form-container .login-form .radio-button {
+  margin-top: 32px;
+  margin-right: 8px;
+  /* margin-bottom: 25px; */
+  height: 24px;
+}
+body .main-container .login-container .content-container .form-container .login-form .radio-button .radio {
+  margin: 1px 0;
+  color: #1f7a54;
+  accent-color: #1f7a54;
+  width: 20px;
+}
+body .main-container .login-container .content-container .form-container .login-form .radio-button #independent-school-radio {
+  margin-left: 32px;
+}
+body .main-container .login-container .content-container .form-container .login-form .state-district {
+  margin-top: 23px;
+  text-align: left;
+  /* font: normal normal medium 12px/16px Quicksand; */
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #666666;
+  opacity: 1;
+}
+body .main-container .login-container .content-container .form-container .login-form .dropdown {
+  /* margin-top: 23px; */
+  background: url("../icons/arrow-down.svg") no-repeat right;
+  background-origin: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+body .main-container .login-container .content-container .form-container .login-form #state {
+  border: none;
+  border-bottom: 2px solid #EEEEEE;
+  margin-bottom: 13px;
+  /* margin-top: 23px; */
+  text-align: left;
+  /* font: normal normal medium 16px/20px Quicksand; */
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+body .main-container .login-container .content-container .form-container .login-form #district {
+  border: none;
+  border-bottom: 2px solid #EEEEEE;
+  /* margin-top: 36px; */
+  margin-bottom: 56px;
+  text-align: left;
+  /* font: normal normal medium 16px/20px Quicksand; */
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+body .main-container .login-container .content-container .form-container .login-form .user-pass {
+  border: none;
+  border-bottom: 2px solid #EEEEEE;
+  text-align: left;
+  /* font: normal normal medium 16px/20px Quicksand; */
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #666666;
+  opacity: 1;
+}
+body .main-container .login-container .content-container .form-container .login-form .forgot-container {
+  display: flex;
+  justify-content: end;
+}
+body .main-container .login-container .content-container .form-container .login-form .forgot-container .forgot {
+  text-align: right;
+  /* font: normal normal medium 14px/18px Quicksand; */
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #1f7a54;
+  text-transform: uppercase;
+  opacity: 1;
+  text-decoration: none;
+}
+body .main-container .login-container .content-container .form-container .login-form input::-ms-reveal {
+  display: none;
+}
+body .main-container .login-container .content-container .form-container .login-form #password {
+  background: url("../icons/preview.svg") no-repeat right;
+  background-origin: border-box;
+  margin-top: 33px;
+  width: 100%;
+}
+body .main-container .login-container .content-container .form-container .login-form #remember-me {
+  margin-top: 26px;
+  /* font: normal normal medium 16px/20px Quicksand; */
+  font-size: 16px;
+  letter-spacing: 0px;
+  accent-color: #1f7a54;
+  color: #222222;
+  opacity: 1;
+  background-image: url("../icons/checkbox-checked.svg");
+}
+body .main-container .login-container .content-container .form-container .login-form #login-button {
+  margin: 34px auto 24px auto;
+  width: 215px;
+  height: 40px;
+  color: #1F2834;
+  font-family: inherit;
+  font-size: 14px;
+  background: #3FD28B 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2392156863);
+  opacity: 1;
+  border: none;
+}
+body .main-container .login-container .about-us-container {
+  margin-bottom: 16px;
+}
+body .main-container .login-container .about-us-container .about-contact {
+  text-align: center;
+  /* font: normal normal medium 14px/18px Quicksand; */
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #1f7a54;
+  opacity: 1;
+  text-decoration: none;
+}
+body .main-container .login-container .about-us-container #about {
+  width: 40px;
+  height: 18px;
+  padding-right: 7px;
+  border-right: 2px solid rgba(0, 0, 0, 0.1215686275);
+}
+body .main-container .login-container .about-us-container #contact-us {
+  width: 72px;
+  height: 18px;
+  padding-left: 6px;
+}
+body .main-container .footer {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  background: #E0E1E1 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+body .main-container .footer #footer-logo {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  width: 90px;
+  height: 24px;
+  padding-right: 8px;
+  border-right: 2px solid rgba(0, 0, 0, 0.1215686275);
+}
+body .main-container .footer .zeus-system-pvt-ltd {
+  margin-left: 8px;
+  margin-top: 13px;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #616161;
+  opacity: 1;
+}
+body .main-container .footer .copyright {
+  margin-left: 0;
+  margin-top: 13px;
+  /* font: normal normal medium 12px/16px Quicksand; */
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #616161;
+  opacity: 1;
+}
+body .main-container .footer .rights-reserved {
+  margin-left: 8px;
+  margin-top: 13px;
+  /* font: normal normal medium 12px/16px Quicksand; */
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #616161;
+  opacity: 1;
+}
+
+@media all and (max-width: 768px) {
+  body .main-container .login-container .content-container {
+    margin-bottom: 292px;
+  }
+}/*# sourceMappingURL=login.css.map */
