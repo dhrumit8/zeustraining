@@ -1,0 +1,195 @@
+{
+    "courses":[
+        {
+            "title": "Acceleration",
+            "subject": "Physics",
+            "image": "./quantum screen assets/images/imageMask.png",
+            "grade": 7,
+            "addGrade": "+2",
+            "units": 4,
+            "lessons": 18,
+            "topics": 24,
+            "professorClasses": ["Mr.Frank's Class B"],
+            "students": 50,
+            "date": "21-Jan-2020 - 21-Aug-2020",
+            "isFavourite": true,
+            "isPreview": true,
+            "isManageCourse": true,
+            "isGradeSubmission": true,
+            "isReports": true,
+            "isExpired": false
+        },
+        {
+            "title": "Displacement, Velocity and Speed",
+            "subject": "Physics",
+            "image": "./quantum screen assets/images/imageMask-1.png",
+            "grade": 6,
+            "addGrade": "+3",
+            "units": 2,
+            "lessons": 15,
+            "topics": 20,
+            "professorClasses": [],
+            "students": null,
+            "date": null,
+            "isFavourite": true,
+            "isPreview": true,
+            "isManageCourse": false,
+            "isGradeSubmission": false,
+            "isReports": true,
+            "isExpired": false
+        },
+        {
+            "title": "Introduction to Biology: Micro organisms and how they affec...",
+            "subject": "Biology",
+            "image": "./quantum screen assets/images/imageMask-3.png",
+            "grade": 4,
+            "addGrade": "+1",
+            "units": 5,
+            "lessons": 16,
+            "topics": 22,
+            "professorClasses": ["All Classes"],
+            "students": 300,
+            "date": null,
+            "isFavourite": true,
+            "isPreview": true,
+            "isManageCourse": false,
+            "isGradeSubmission": false,
+            "isReports": true,
+            "isExpired": false
+        },
+        {
+            "title": "Introduction to High School Mathematics",
+            "subject": "Mathematics",
+            "image": "./quantum screen assets/images/imageMask-2.png",
+            "grade": 8,
+            "addGrade": "+3",
+            "units": null,
+            "lessons": null,
+            "topics": null,
+            "professorClasses": ["Mr.Frank's Class B"],
+            "students": 44,
+            "date": "14-Oct-2019 - 20-Oct-2020",
+            "isFavourite": false,
+            "isPreview": true,
+            "isManageCourse": true,
+            "isGradeSubmission": true,
+            "isReports": true,
+            "isExpired": true
+        }
+    ],
+    "alerts":[
+        {
+            "description": "License for Introduction to Algebra has been assigned to your school",
+            "course": null,
+            "class": null,
+            "datetime": "15-Sep-2018 at 07:21 pm",
+            "isViewed": false
+        },
+        {
+            "description": "Lesson 3 Practice Worksheet overdue for Amy Santiago",
+            "course": "Advanced Mathematics",
+            "class": null,
+            "datetime": "15-Sep-2018 at 05:21 pm",
+            "isViewed": true
+        },
+        {
+            "description": "23 new students created",
+            "course": null,
+            "class": null,
+            "datetime": "14-Sep-2018 at 01:21 pm",
+            "isViewed": false
+        },
+        {
+            "description": "15 submissions ready for evaluation",
+            "course": "Basics of Algebra",
+            "class": null,
+            "datetime": "13-Sep-2018 at 01:15 pm",
+            "isViewed": false
+        },
+        {
+            "description": "License for Basic Concepts in Geometry has been assigned to your...",
+            "course": null,
+            "class": null,
+            "datetime": "15-Sep-2018 at 07:21 pm",
+            "isViewed": false
+        },
+        {
+            "description": "Lesson 3 Practice Worksheet overdue for Sam Diego",
+            "course": "Advanced Mathematics",
+            "class": null,
+            "datetime": "12-Sep-2018 at 02:21 pm",
+            "isViewed": true
+        },
+        {
+            "description": "15 submissions ready for evaluation",
+            "course": "Basics of Algebra",
+            "class": null,
+            "datetime": "13-Sep-2018 at 01:15 pm",
+            "isViewed": false
+        },
+        {
+            "description": "License for Basic Concepts in Geometry has been assigned to your...",
+            "course": null,
+            "class": null,
+            "datetime": "15-Sep-2018 at 07:21 pm",
+            "isViewed": false
+        },
+        {
+            "description": "Lesson 3 Practice Worksheet overdue for Sam Diego",
+            "course": "Advanced Mathematics",
+            "class": null,
+            "datetime": "12-Sep-2018 at 02:21 pm",
+            "isViewed": true
+        }
+    ],
+    "announcements":[
+        {
+            "pa": "Wilson Kumar",
+            "description": "No classes will be held on 21st Nov",
+            "attachment" : "&#128206; 2 files are attached",
+            "course": null,
+            "datetime": "15-Sep-2018 at 07:21 pm",
+            "isViewed": true
+        },
+        {
+            "pa": "Samson White",
+            "description": "Guest lecture on Geometry on 20th September",
+            "attachment" : "&#128206; 2 files are attached",
+            "course": null,
+            "datetime": "15-Sep-2018 at 07:21 pm",
+            "isViewed": false
+        },
+        {
+            "pa": "Wilson Kumar",
+            "description": "Additional course materials available on request",
+            "attachment" : null,
+            "course": "Mathematics 101",
+            "datetime": "15-Sep-2018 at 07:21 pm",
+            "isViewed": true
+        },
+        {
+            "pa": "Wilson Kumar",
+            "description": "No classes will be held on 25th Dec",
+            "attachment" : null,
+            "course": null,
+            "datetime": "15-Sep-2018 at 07:21 pm",
+            "isViewed": false
+        },
+        {
+            "pa": "Wilson Kumar",
+            "description": "Additional course materials available on request",
+            "attachment" : null,
+            "course": "Mathematics 101",
+            "datetime": "15-Sep-2018 at 07:21 pm",
+            "isViewed": false
+        },
+        {
+            "pa": "Wilson Kumar",
+            "description": "Additional course materials available on request",
+            "attachment" : null,
+            "course": "Mathematics 101",
+            "datetime": "15-Sep-2018 at 07:21 pm",
+            "isViewed": false
+        }
+    ]
+}

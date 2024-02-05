@@ -1,0 +1,65 @@
+@font-face {
+  font-family: Quicksand;
+  src: url(../QuicksandFont/Quicksand-VariableFont_wght.ttf);
+  src: url(../QuicksandFont/static/Quicksand-Bold.ttf);
+  src: url(../QuicksandFont/static/Quicksand-Light.ttf);
+  src: url(../QuicksandFont/static/Quicksand-Medium.ttf);
+  src: url(../QuicksandFont/static/Quicksand-Regular.ttf);
+  src: url(../QuicksandFont/static/Quicksand-SemiBold.ttf);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 56px;
+  background: #25313F;
+  opacity: 0.8;
+  background-image: url("../header pattern svg.svg");
+  mix-blend-mode: overlay;
+}
+.header #header-logo {
+  margin-left: 24px;
+  margin-top: 11px;
+  width: 134px;
+  height: 36px;
+}
+.header #profile-logo {
+  margin-right: 24px;
+  margin-left: 32px;
+}
+.header #announcement-logo {
+  margin-left: 32px;
+}
+.header .main-navbar > li {
+  list-style: none;
+  margin-right: 32px;
+}
+.header .main-navbar > li > a {
+  text-decoration: none;
+  text-align: center;
+  /* font: normal normal medium 14px/14px Quicksand; */
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #3FD28B;
+  opacity: 1;
+}
+.header #dashboard-link {
+  text-decoration: none;
+  text-align: center;
+  /* font: normal normal medium 14px/14px Quicksand; */
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  padding-bottom: 14px;
+  border-bottom: 4px solid #FFFFFF;
+}
+.header .main-navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+}
+
+#hamburger-menu-logo {
+  display: none;
+  width: 27px;
+}/*# sourceMappingURL=dashboardHeader.css.map */

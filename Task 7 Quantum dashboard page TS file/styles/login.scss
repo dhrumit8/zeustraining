@@ -1,0 +1,286 @@
+@import './fonts';
+@import './variables';
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0%;
+    height: 100%;
+    font-family: Quicksand;
+
+    .main-container {
+        @include flexColumn();
+
+        .header {
+            height: 56px;
+            background: $headerBackground;
+            opacity: 0.8;
+            background-image: url("../header\ pattern\ svg.svg");
+            border-bottom: 2px solid $headerBlueborder;
+            mix-blend-mode: overlay;
+
+            #header-logo {
+                margin-left: 24px;
+                margin-top: 11px;
+                width: 134px;
+                height: 36px;
+            }
+        }
+
+        .login-container {
+            @include flexColumn();
+            align-items: center;
+            background-color: $bodyBackground;
+
+            .content-container {
+                margin-top: 50px;
+                margin-bottom: 32px;
+                height: 550px;
+                width: 488px;
+                background-color: $pureWhiteColor;
+                border-top: 4px solid $formBlueBorder;
+                align-items: center;
+
+                .form-container {
+                    margin-left: 32px;
+                    margin-right: 32px;
+                    margin-top: 20px;
+
+                    #back-logo {
+                        height: 26px;
+                        text-align: left;
+                        display: inline;
+                    }
+
+
+                    #login-heading {
+                        /* font: normal normal medium 24px/28px Quicksand; */
+                        display: inline;
+                        margin-top: 0%;
+                        margin-left: 62px;
+                        font-size: $largeFont;
+                        letter-spacing: 0px;
+                        color: $textDark;
+                        opacity: 1;
+                    }
+
+                    .login-form {
+                        @include flexColumn();
+
+                        .radio-button {
+                            margin-top: 32px;
+                            margin-right: 8px;
+                            /* margin-bottom: 25px; */
+                            height: 24px;
+
+                            .radio {
+                                margin: 1px 0;
+                                color: $primaryGreen;
+                                accent-color: $primaryGreen;
+                                width: 20px;
+                            }
+
+                            #independent-school-radio {
+                                margin-left: 32px;
+                            }
+                        }
+
+                        .state-district {
+                            margin-top: 23px;
+                            text-align: left;
+                            /* font: normal normal medium 12px/16px Quicksand; */
+                            font-size: $smallFont;
+                            letter-spacing: 0px;
+                            color: $textLight;
+                            opacity: 1;
+                        }
+
+                        .dropdown {
+                            /* margin-top: 23px; */
+                            background: url("../icons/arrow-down.svg") no-repeat right;
+                            background-origin: border-box;
+                            appearance: none;
+
+                        }
+
+                        #state {
+                            border: none;
+                            border-bottom: 2px solid $bodyBackground;
+                            margin-bottom: 13px;
+                            /* margin-top: 23px; */
+                            text-align: left;
+                            /* font: normal normal medium 16px/20px Quicksand; */
+                            font-size: $bigFont;
+                            letter-spacing: 0px;
+                            color: $textMedium;
+                            opacity: 1;
+                        }
+
+                        #district {
+                            border: none;
+                            border-bottom: 2px solid $bodyBackground;
+                            /* margin-top: 36px; */
+                            margin-bottom: 56px;
+                            text-align: left;
+                            /* font: normal normal medium 16px/20px Quicksand; */
+                            font-size: $bigFont;
+                            letter-spacing: 0px;
+                            color: $textMedium;
+                            opacity: 1;
+                        }
+
+                        .user-pass {
+                            border: none;
+                            border-bottom: 2px solid $bodyBackground;
+                            text-align: left;
+                            /* font: normal normal medium 16px/20px Quicksand; */
+                            font-size: $bigFont;
+                            letter-spacing: 0px;
+                            color: $textLight;
+                            opacity: 1;
+                        }
+
+                        .forgot-container {
+                            display: flex;
+                            justify-content: end;
+
+                            .forgot {
+                                text-align: right;
+                                /* font: normal normal medium 14px/18px Quicksand; */
+                                font-size: $mediumFont;
+                                letter-spacing: 0px;
+                                color: $primaryGreen;
+                                text-transform: uppercase;
+                                opacity: 1;
+                                text-decoration: none;
+                            }
+                        }
+
+                        input::-ms-reveal {
+                            display: none;
+                        }
+
+                        #password {
+                            background: url("../icons/preview.svg") no-repeat right;
+                            background-origin: border-box;
+                            margin-top: 33px;
+                            width: 100%;
+                        }
+
+                        #remember-me {
+                            margin-top: 26px;
+                            /* font: normal normal medium 16px/20px Quicksand; */
+                            font-size: $bigFont;
+                            letter-spacing: 0px;
+                            accent-color: $primaryGreen;
+                            color: $textDark;
+                            opacity: 1;
+                            background-image: url("../icons/checkbox-checked.svg");
+                        }
+
+                        #login-button {
+                            margin: 34px auto 24px auto;
+                            width: 215px;
+                            height: 40px;
+                            color: #1F2834;
+                            font-family: inherit;
+                            font-size: $mediumFont;
+                            background: $greenButton 0% 0% no-repeat padding-box;
+                            box-shadow: 0px 3px 5px #0000003D;
+                            opacity: 1;
+                            border: none;
+                        }
+                    }
+                }
+            }
+
+            .about-us-container {
+                margin-bottom: 16px;
+
+                .about-contact {
+                    text-align: center;
+                    /* font: normal normal medium 14px/18px Quicksand; */
+                    font-size: $mediumFont;
+                    letter-spacing: 0px;
+                    color: $primaryGreen;
+                    opacity: 1;
+                    text-decoration: none;
+                }
+
+                #about {
+                    width: 40px;
+                    height: 18px;
+                    padding-right: 7px;
+                    border-right: 2px solid #0000001f;
+                }
+
+                #contact-us {
+                    width: 72px;
+                    height: 18px;
+                    padding-left: 6px;
+                }
+            }
+        }
+
+        .footer {
+            @include flexCenter();
+            height: 40px;
+            background: $footerBackground 0% 0% no-repeat padding-box;
+            opacity: 1;
+
+            #footer-logo {
+                margin-top: 8px;
+                margin-bottom: 8px;
+                margin-right: 8px;
+                width: 90px;
+                height: 24px;
+                padding-right: 8px;
+                border-right: 2px solid #0000001f;
+            }
+
+            .zeus-system-pvt-ltd {
+                margin-left: 8px;
+                margin-top: 13px;
+                font-weight: bold;
+                font-size: $smallFont;
+                letter-spacing: 0px;
+                color: $textFooter;
+                opacity: 1;
+            }
+
+            .copyright {
+                margin-left: 0;
+                margin-top: 13px;
+                /* font: normal normal medium 12px/16px Quicksand; */
+                font-size: $smallFont;
+                letter-spacing: 0px;
+                color: $textFooter;
+                opacity: 1;
+            }
+
+            .rights-reserved {
+                margin-left: 8px;
+                margin-top: 13px;
+                /* font: normal normal medium 12px/16px Quicksand; */
+                font-size: $smallFont;
+                letter-spacing: 0px;
+                color: $textFooter;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    body .main-container .login-container .content-container {
+        margin-bottom: 292px;
+    }
+}

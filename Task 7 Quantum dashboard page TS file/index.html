@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./styles/login.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="header">
+            <img id="header-logo" src="icons/logo used in header.svg" alt="Quantum header logo">
+        </div>
+        <div class="login-container">
+            <div class="content-container">
+                <div class="form-container">
+                    <img id="back-logo" src="icons/back.svg" alt="Back logo">
+                    <p id="login-heading">Log in with Quantum</p>
+                    <div class="login-form">
+                        <div class="radio-button">
+                            <input class="radio" id="district-radio" type="radio" name="school"> District
+                            <input class="radio" id="independent-school-radio" type="radio" name="school"> Independent
+                            school
+                        </div>
+                        <div class="state-district">State*</div>
+                        <select class="dropdown" title="state" name="state" id="state">State
+                            <option value="Alabama">Alabama</option>
+                            <option value="Gujarat">Gujarat</option>
+                        </select>
+                        <div class="state-district">District*</div>
+                        <select class="dropdown" title="state" name="district" id="district">District
+                            <option value="Alabama-School-District">Alabama School District</option>
+                            <option value="Gujarat School">Gujarat School</option>
+                        </select>
+
+                        <input class="user-pass" type="text" name="username" id="username"
+                            placeholder="Username/Email ID*">
+                        <div class="forgot-container">
+                            <a class="forgot" href="Forgot">FORGOT USERNAME?</a>
+                        </div>
+                        <input class="user-pass" type="password" name="password" id="password" placeholder="Password*">
+                        <div class="forgot-container">
+                            <a class="forgot" href="Forgot">FORGOT PASSWORD?</a>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="remember-me" id="remember-me">
+                            Remember Me
+                        </div>
+                        <input type="button" id="login-button" value="LOG IN">
+                    </div>
+                </div>
+            </div>
+            <div class="about-us-container">
+                <a id="about" class="about-contact" href="about">About</a>
+                <a id="contact-us" class="about-contact" href="contact">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer">
+            <img id="footer-logo" src="icons/logo used in footer.svg" alt="Quantum footer logo">
+            <div class="copyright">Copyright © 2020-2021</div>
+            <div class="zeus-system-pvt-ltd">Zeus Systems Pvt. Ltd.</div>
+            <div class="rights-reserved">All rights reserved.</div>
+        </div>
+    </div>
+</body>
+
+</html>
