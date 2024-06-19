@@ -1,0 +1,17 @@
+// @import '../../styles/fonts.scss';
+@import '../../styles/variables.scss';
+
+img{
+    width: 127px;
+    height: 36px;
+    margin-top: 9px;
+    margin-left: 24px;
+}
+
+.header{
+    width: 100%;
+    height: 56px;
+    background: transparent url('../../assets/header\ pattern\ image.png');
+    background-color: $headerBackground;
+    border-bottom: 2px solid $headerBlueborder;
+}

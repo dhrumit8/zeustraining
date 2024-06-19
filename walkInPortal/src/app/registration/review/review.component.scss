@@ -1,0 +1,270 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/fonts.scss';
+
+.title-with-edit {
+    margin: 24px;
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+
+    p {
+        margin: 0;
+        font-size: $bigFont;
+        font-weight: 600;
+
+    }
+
+    a {
+        display: flex;
+        text-decoration: none;
+        font-size: $bigFont;
+        font-weight: 600;
+        p{
+            color: $primaryGreen;
+        }
+        .edit-icon {
+            width: 18px;
+            height: 18px;
+            margin-right: 6px;
+        }
+    }
+}
+
+label {
+    color: $textLight;
+    font-size: $smallFont;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+p {
+    color: $textDark;
+    font-size: $bigFont;
+    margin-bottom: 40px;
+    font-weight: 600;
+    margin-top: 0px;
+}
+
+.personal-information {
+    margin: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $pureWhiteColor;
+    border-radius: 2px;
+
+    .information {
+        margin: 24px;
+        @include flexColumn();
+        width: 480px;
+
+        .phone-number-container {
+            display: flex;
+
+            p {
+                margin-right: 12px;
+            }
+        }
+
+        .resume-container {
+            display: flex;
+            margin-bottom: 40px;
+            height: 24px;
+
+            p {
+                margin-bottom: 0px;
+                align-self: center;
+                margin-right: 8px;
+            }
+
+            .upload-icon {
+                height: 24px;
+                width: 24px;
+            }
+        }
+
+        .roles-container {
+            margin-bottom: 40px;
+
+            label {
+                margin-bottom: 12px;
+            }
+
+            p {
+                margin-top: 16px;
+                margin-bottom: 0px;
+            }
+        }
+
+        .roles-container>label {
+            margin-bottom: 12px;
+        }
+
+        .job-related-container {
+            display: flex;
+            margin-top: 0;
+            height: 24px;
+
+            p {
+                margin-bottom: 0px;
+                align-self: center;
+                margin-left: 8px;
+            }
+        }
+    }
+
+
+    .profile-icon-container {
+        margin: 24px;
+
+        .profile-icon {
+            width: 114px;
+            margin: 0px auto 16px auto;
+        }
+
+    }
+}
+
+
+.qualification-header {
+    height: 56px;
+    margin: 24px 24px 0px 24px;
+    background-color: $qualificationHeader;
+    box-shadow: 0px 4px 6px #00000029;
+    display: flex;
+    align-items: center;
+
+    p {
+        font-weight: 600;
+        margin-left: 15px;
+        margin-bottom: 0px;
+    }
+}
+
+.educational-container {
+    background-color: $pureWhiteColor;
+    border-radius: 2px;
+    margin: 0px 24px 24px 24px;
+    display: flex;
+
+    .inner-container {
+        @include flexColumn();
+        width: 100%;
+        margin: 24px;
+
+        .flex-horizontal {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .flex-vertical {
+            @include flexColumn();
+            flex: 1;
+        }
+
+        .extra-div {
+            width: 24px;
+        }
+
+
+        .remove-margin-bottom {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+
+.professional-container {
+    background-color: $pureWhiteColor;
+    border-radius: 2px;
+    margin: 0px 24px 8px 24px;
+    display: flex;
+
+    .inner-container {
+        @include flexColumn();
+        margin: 24px;
+    }
+}
+
+.fresher-experienced-container {
+    background-color: $pureWhiteColor;
+    border-radius: 2px;
+    margin: 0px 24px 24px 24px;
+    display: flex;
+
+    .inner-container {
+        @include flexColumn();
+        width: 100%;
+        margin: 24px;
+
+        .flex-horizontal {
+            display: flex;
+            // justify-content: space-between;
+        }
+
+        .flex-vertical {
+            @include flexColumn();
+            flex: 1;
+        }
+
+        .extra-div {
+            width: 24px;
+        }
+
+        .yes-no-container {
+            display: flex;
+            margin-bottom: 16px;
+            p{
+                margin-bottom: 0px;
+            }
+        }
+
+        .expertise-tech-container {
+            margin-bottom: 16px;
+            p{
+                margin-top: 16px;
+                margin-bottom: 0px;
+            }
+        }
+
+        .familiar-tech-container {
+            margin-bottom: 16px;
+            p{
+                margin-top: 16px;
+                margin-bottom: 0px;
+            }
+        }
+
+    }
+}
+
+
+.remove-margin-bottom{
+    margin-bottom: 0px;
+}
+
+
+.next-prev-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    button {
+        background-color: $greenButton;
+        color: $buttonTextColor;
+        font-family: inherit;
+        font-size: $mediumFont;
+        font-weight: 600;
+        border: none;
+        height: 28px;
+        border-radius: 2px;
+        text-align: center;
+        box-shadow: 0px 3px 5px #0000003D;
+    }
+    .previous-button{
+        // display: none;
+        width: 100px;
+        // margin-right: 16px;
+    }
+}
+
+

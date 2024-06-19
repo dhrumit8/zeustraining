@@ -1,0 +1,233 @@
+@font-face {
+  font-family: Quicksand;
+  src: url(../assets/QuicksandFont/Quicksand-VariableFont_wght.ttf);
+}
+.title-with-edit {
+  margin: 24px;
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+}
+.title-with-edit p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+.title-with-edit a {
+  display: flex;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+.title-with-edit a p {
+  color: #1f7a54;
+}
+.title-with-edit a .edit-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+}
+
+label {
+  color: #666666;
+  font-size: 12px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+p {
+  color: #222222;
+  font-size: 16px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  margin-top: 0px;
+}
+
+.personal-information {
+  margin: 24px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+}
+.personal-information .information {
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+}
+.personal-information .information .phone-number-container {
+  display: flex;
+}
+.personal-information .information .phone-number-container p {
+  margin-right: 12px;
+}
+.personal-information .information .resume-container {
+  display: flex;
+  margin-bottom: 40px;
+  height: 24px;
+}
+.personal-information .information .resume-container p {
+  margin-bottom: 0px;
+  align-self: center;
+  margin-right: 8px;
+}
+.personal-information .information .resume-container .upload-icon {
+  height: 24px;
+  width: 24px;
+}
+.personal-information .information .roles-container {
+  margin-bottom: 40px;
+}
+.personal-information .information .roles-container label {
+  margin-bottom: 12px;
+}
+.personal-information .information .roles-container p {
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+.personal-information .information .roles-container > label {
+  margin-bottom: 12px;
+}
+.personal-information .information .job-related-container {
+  display: flex;
+  margin-top: 0;
+  height: 24px;
+}
+.personal-information .information .job-related-container p {
+  margin-bottom: 0px;
+  align-self: center;
+  margin-left: 8px;
+}
+.personal-information .profile-icon-container {
+  margin: 24px;
+}
+.personal-information .profile-icon-container .profile-icon {
+  width: 114px;
+  margin: 0px auto 16px auto;
+}
+
+.qualification-header {
+  height: 56px;
+  margin: 24px 24px 0px 24px;
+  background-color: #DBEFFF;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1607843137);
+  display: flex;
+  align-items: center;
+}
+.qualification-header p {
+  font-weight: 600;
+  margin-left: 15px;
+  margin-bottom: 0px;
+}
+
+.educational-container {
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  margin: 0px 24px 24px 24px;
+  display: flex;
+}
+.educational-container .inner-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 24px;
+}
+.educational-container .inner-container .flex-horizontal {
+  display: flex;
+  justify-content: space-between;
+}
+.educational-container .inner-container .flex-vertical {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.educational-container .inner-container .extra-div {
+  width: 24px;
+}
+.educational-container .inner-container .remove-margin-bottom {
+  margin-bottom: 0px;
+}
+
+.professional-container {
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  margin: 0px 24px 8px 24px;
+  display: flex;
+}
+.professional-container .inner-container {
+  display: flex;
+  flex-direction: column;
+  margin: 24px;
+}
+
+.fresher-experienced-container {
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  margin: 0px 24px 24px 24px;
+  display: flex;
+}
+.fresher-experienced-container .inner-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 24px;
+}
+.fresher-experienced-container .inner-container .flex-horizontal {
+  display: flex;
+}
+.fresher-experienced-container .inner-container .flex-vertical {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.fresher-experienced-container .inner-container .extra-div {
+  width: 24px;
+}
+.fresher-experienced-container .inner-container .yes-no-container {
+  display: flex;
+  margin-bottom: 16px;
+}
+.fresher-experienced-container .inner-container .yes-no-container p {
+  margin-bottom: 0px;
+}
+.fresher-experienced-container .inner-container .expertise-tech-container {
+  margin-bottom: 16px;
+}
+.fresher-experienced-container .inner-container .expertise-tech-container p {
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+.fresher-experienced-container .inner-container .familiar-tech-container {
+  margin-bottom: 16px;
+}
+.fresher-experienced-container .inner-container .familiar-tech-container p {
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+
+.remove-margin-bottom {
+  margin-bottom: 0px;
+}
+
+.next-prev-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.next-prev-container button {
+  background-color: #3FD28B;
+  color: #1F2834;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  height: 28px;
+  border-radius: 2px;
+  text-align: center;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2392156863);
+}
+.next-prev-container .previous-button {
+  width: 100px;
+}/*# sourceMappingURL=review.component.css.map */

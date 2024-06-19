@@ -1,0 +1,14 @@
+img {
+  width: 127px;
+  height: 36px;
+  margin-top: 9px;
+  margin-left: 24px;
+}
+
+.header {
+  width: 100%;
+  height: 56px;
+  background: transparent url("../../assets/header pattern image.png");
+  background-color: #25313F;
+  border-bottom: 2px solid #31b9e4;
+}/*# sourceMappingURL=header.component.css.map */

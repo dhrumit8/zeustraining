@@ -1,0 +1,32 @@
+$headerBlueborder: #31b9e4;
+$headerBackground: #25313F;
+$primaryGreen: #1f7a54;
+$greenButton: #3FD28B;
+// $textNavbar: #3FD28B;
+// $greenBackground: #8DDC97;
+$pureWhiteColor: #FFFFFF;
+$bodyBackground: #EEEEEE;
+$textDark: #222222;
+$textMedium: #333333;
+$textLight: #666666;
+$formBlueBorder: #3ac7ec;
+// $textFooter: #616161;
+$textExpired: #D10107;
+$expiresBackground: #FFE4E6;
+// $footerBackground: #E0E1E1;
+// $textSort: #686868;
+$pureBlackColor: #000000;
+$registrationHeaderBackground: #3C4E62;
+$buttonTextColor: #1F2834;
+$qualificationHeader: #DBEFFF;
+
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}

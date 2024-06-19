@@ -1,0 +1,86 @@
+<div class="header">
+    <p>Educational Qualifications</p>
+    <div class="vertical-line"></div>
+    <a (click)="toggleEducational()">
+        <img src="../../../../assets/icons/expand_less.svg" alt="expand-less icon" />
+    </a>
+</div>
+
+<form [formGroup]="qualificationInfo">
+
+    <div *ngIf="hideEducational" class="container">
+        <div class="inner-container">
+            <div class="error-field" *ngIf="Percentage.errors?.['required'] && (Percentage.touched || Percentage.dirty)">
+                Percentage is required
+            </div>
+            <div class="error-field" *ngIf="Percentage.errors?.['pattern']">
+                Percentage should be exactly 2 digits
+            </div>
+            <label for="percentage">Aggregate Percentage*</label>
+            <input type="text" formControlName="percentage" name="percentage" id="percentage" class="short" />
+            <div class="horizontal-border short"></div>
+            <div class="error-field" *ngIf="YearOfPassing.errors?.['required'] && (YearOfPassing.touched || YearOfPassing.dirty)">
+                Year Of Passing is required
+            </div>
+            <label for="yearOfPassing">Year of Passing*</label>
+            <select name="yearOfPassing" formControlName="yearOfPassing" id="yearOfPassing" class="short">
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+            </select>
+            <div class="horizontal-border short"></div>
+            
+            <div class="flex-horizontal">
+                <div class="flex-vertical">
+                    <div class="error-field" *ngIf="Qualification.errors?.['required'] && (Qualification.touched || Qualification.dirty)">
+                        Qualification is required
+                    </div>
+                    <label for="qualification">Qualification*</label>
+                    <select name="qualification" formControlName="qualification" id="qualification">
+                        <option value="B.Tech">Bachelor in Technology (B.Tech)</option>
+                        <option value="M.Tech">Master in Technology (M.Tech)</option>
+                    </select>
+                    <div class="horizontal-border"></div>
+                </div>
+                <div class="extra-div"></div>
+                <div class="flex-vertical">
+                    <div class="error-field" *ngIf="Stream.errors?.['required'] && (Stream.touched || Stream.dirty)">
+                        Stream is required
+                    </div>
+                    <label for="stream">Stream*</label>
+                    <select name="stream" formControlName="stream" id="stream">
+                        <option value="CS">Computer Science</option>
+                        <option value="IT">Information Technology</option>
+                    </select>
+                    <div class="horizontal-border"></div>
+                </div>
+            </div>
+            
+            <div class="flex-horizontal">
+                <div class="flex-vertical">
+                    <div class="error-field" *ngIf="College.errors?.['required'] && (College.touched || College.dirty)">
+                        College is required
+                    </div>
+                    <label for="college">College*</label>
+                    <select name="college" formControlName="college" id="college">
+                        <option value="PIT">Pune Institute of Technology (PIT)</option>
+                        <option value="GCET">GCET</option>
+                    </select>
+                    <div class="horizontal-border"></div>
+                </div>
+                <div class="extra-div"></div>
+                <div class="flex-vertical">
+                    <label for="otherCollege">If others, please enter your college name</label>
+                    <input type="text" formControlName="otherCollege" name="otherCollege" id="otherCollege" />
+                    <div class="horizontal-border"></div>
+                </div>
+            </div>
+            
+            <div class="error-field" *ngIf="CollegeLocation.errors?.['required'] && (CollegeLocation.touched || CollegeLocation.dirty)">
+                Location is required
+            </div>
+            <label for="collegeLocation">Where is your college located?*</label>
+            <input type="text" formControlName="collegeLocation" name="collegeLocation" id="collegeLocation" class="short" />
+            <div class="horizontal-border short"></div>
+        </div>
+    </div>
+</form>

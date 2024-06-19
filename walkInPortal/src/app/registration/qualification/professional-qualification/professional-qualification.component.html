@@ -1,0 +1,35 @@
+<div class="header">
+    <p>Professional Qualifications</p>
+    <div class="vertical-line"></div>
+    <a (click)="showHideProf()">
+        <img src="../../../../assets/icons/expand_less.svg" alt="" />
+    </a>
+</div>
+
+<form [formGroup]="professionalQualificationInfo">
+
+    <div *ngIf="hideProf" class="container">
+        <div class="inner-container">
+            <div class="error-field" *ngIf="ApplicantType.errors?.['required'] && (ApplicantType.touched || ApplicantType.dirty)">
+                Applicant Type is required
+            </div>
+            <label for="applicantType">Applicant Type*</label>
+            <div class="horizontal-flex">
+                
+                <div class="radio-container">
+                    
+                    <input type="radio" value="Fresher" name="applicantType" id="fresher" (click)="showFresher()" formControlName="applicantType" [checked]="professionalQualificationInfo.get('applicantType')?.value === 'Fresher'">
+                    <label for="fresher">Fresher</label>
+                </div>
+                <div class="radio-container">
+                    
+                    <input type="radio" value="Experienced" name="applicantType" id="experienced" (click)="showExperienced()" formControlName="applicantType">
+                    <label for="experienced">Experienced</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <app-fresher-qualification *ngIf="isFresher && hideProf"></app-fresher-qualification>
+    <app-experienced-qualification *ngIf="isExperienced && hideProf"></app-experienced-qualification>
+</form>

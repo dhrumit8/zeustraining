@@ -1,0 +1,50 @@
+<div *ngFor="let job of jobs" class="container with-expire">
+    <div *ngIf="job.expires" class="expires-container">
+        Expires in {{job.expires}} days
+    </div>
+    <div class="inner-container">
+        <a href="#">{{job.title}}</a>
+        <p class="sub-title">Date & Time :</p>
+        <div class="date-location">
+            <p>{{job.startDate}} to {{job.endDate}}</p>
+            <div class="vertical-line"></div>
+
+                <img src="../../../assets/icons/location_on_black_24dp.svg" alt="location icon" class="location-icon">
+                <span class="location-text">{{job.location}}</span>
+        </div>
+        <div class="horizontal-line"></div>
+        <p class="sub-title">Job Roles:</p>
+        <div class="roles-container">
+            <div class="horizontal-flex" *ngIf="job.industrialDesigner">
+
+                <div class="role-icon-container">
+                    <img src="../../../assets/icons/Instructional Designer.svg" alt="industrial designer icon" class="role-icon">
+                </div>
+                <p>Industrial Designer</p>
+            </div>
+            <div class="horizontal-flex" *ngIf="job.softwareEngineer">
+                <div class="vertical-line-role"></div>
+
+                <div class="role-icon-container">
+                    <img src="../../../assets/icons/Software Quality Engineer.svg" alt="software engineer logo" class="role-icon">
+                </div>
+                <p>Software Engineer</p>
+            </div>
+            <div class="horizontal-flex" *ngIf="job.softwareQualityEngineer">
+                <div class="vertical-line-role"></div>
+
+                <div class="role-icon-container">
+                    <img src="../../../assets/icons/Software Quality Engineer.svg" alt="software quality engineer logo" class="role-icon">
+                </div>
+                <p>Software Quality Engineer</p>
+            </div>
+        </div>
+        <div *ngIf="job.opportunity" class="opportunity-container">
+            {{job.opportunity}}
+        </div>
+        <div class="button-container">
+
+            <button [routerLink]="'job-details'" (click)="viewDetails(job)" class="view-button">VIEW MORE DETAILS</button>
+        </div>
+    </div>
+</div>

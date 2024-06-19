@@ -1,0 +1,65 @@
+<form [formGroup]="fresherInfo">
+
+
+    <div class="container">
+        <div class="inner-container">
+
+            <div class="familiar-tech-container">
+                <label for="familiarTechnology">Select All The Technologies You Expertise In*</label>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="familiarTechnology" id="javascriptfam" formControlName="javascript" />
+                    <label for="javascriptfam">Javascript</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="familiarTechnology" id="angularJSfam" formControlName="angularJS" />
+                    <label for="angularJSfam">Angular JS</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="familiarTechnology" id="reactfam" formControlName="react" />
+                    <label for="reactfam">React</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="familiarTechnology" id="nodeJSfam" formControlName="nodeJS" />
+                    <label for="nodeJSfam">Node JS</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="familiarTechnology" id="otherfam" formControlName="other" />
+                    <label for="otherfam">Others</label>
+                </div>
+            </div>
+
+            <div class="flex-horizontal">
+                <div class="flex-vertical">
+                    <label for="otherFamiliarTech">If Others, Please mention</label>
+                    <input type="text" name="otherFamiliarTech" id="otherFamiliarTech" formControlName="otherTech" />
+                    <div class="horizontal-border"></div>
+                </div>
+                <div class="extra-div"></div>
+                <div class="flex-vertical"></div>
+            </div>
+
+
+            <label for="isAppeared">Have You Appeared For Any Test By Zeus In The Past 12 Months?*</label>
+            <div class="yes-no-container">
+                <div class="radio-container">
+                    <input type="radio" name="isAppeared" id="yesAppeared" (change)="setAppearedZeusTest(true)" [checked]="fresherInfo.get('appearedZeusTest')?.value === true" />
+                    <label for="yesAppeared">Yes</label>
+                </div>
+                <div class="radio-container">
+                    <input type="radio" name="isAppeared" id="noAppeared" (change)="setAppearedZeusTest(false)" [checked]="fresherInfo.get('appearedZeusTest')?.value === false" />
+                    <label for="noAppeared">No</label>
+                </div>
+            </div>
+
+            <div class="flex-horizontal">
+                <div class="flex-vertical">
+                    <label for="roleApplied">If Yes, Which Role Did You Apply For?</label>
+                    <input type="text" name="roleApplied" id="roleApplied" formControlName="roleApplied" />
+                    <div class="horizontal-border last"></div>
+                </div>
+                <div class="extra-div"></div>
+                <div class="flex-vertical"></div>
+            </div>
+        </div>
+    </div>
+</form>

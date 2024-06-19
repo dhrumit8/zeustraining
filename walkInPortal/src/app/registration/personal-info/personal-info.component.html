@@ -1,0 +1,207 @@
+<!-- <div class="container">
+    <div class="information">
+
+        
+
+        <label for="firstName">First Name*</label>
+        <input type="text" [(ngModel)]="personalInfo.firstName" name="firstName" id="firstName">
+        <div class="horizontal-border"></div>
+        <label for="lastName">Last Name*</label>
+        <input type="text" [(ngModel)]="personalInfo.lastName" name="lastName" id="lastName">
+        <div class="horizontal-border"></div>
+        <label for="email">Email*</label>
+        <input type="text" [(ngModel)]="personalInfo.email" name="email" id="email">
+        <div class="horizontal-border"></div>
+        <label for="phoneNumber">Phone Number*</label>
+        <div class="phone-number-container">
+            <p>+</p>
+            <input type="text" [(ngModel)]="personalInfo.phoneCode" name="phoneNumber" id="phoneNumberCode">
+            <input type="text" [(ngModel)]="personalInfo.phoneNumber" name="phoneNumber" id="phoneNumber">
+        </div>
+        <div class="resume-container">
+            <input type="file" [(ngModel)]="personalInfo.resume" name="uploadfile" id="img">
+            <label for="img">
+                <img src="../../../assets/icons/Upload.svg" alt="upload icon" class="upload-icon">
+                UPLOAD RESUME
+            </label>
+        </div>
+
+        <label for="portfolio">Enter Portfolio URL (if any)</label>
+        <input type="text" [(ngModel)]="personalInfo.portfolio" name="portfolio" id="portfolio">
+        <div class="horizontal-border"></div>
+        <div class="roles-container">
+
+            <label for="roles">Preferred Job Roles*</label>
+            
+            <div class="checkbox-container">
+                <input [(ngModel)]="personalInfo.industrialDesigner" type="checkbox" name="roles"
+                    id="industrial-designer">
+                <label for="industrial-designer">Industrial Designer</label>
+            </div>
+            <div class="checkbox-container">
+                <input [(ngModel)]="personalInfo.softwareEngineer" type="checkbox" name="roles" id="software-engineer">
+                <label for="software-engineer">Software Engineer</label>
+            </div>
+            <div class="checkbox-container">
+                <input [(ngModel)]="personalInfo.softwareQualityEngineer" type="checkbox" name="roles"
+                    id="software-quality-engineer">
+                <label for="software-quality-engineer">Software Quality Engineer</label>
+            </div>
+        </div>
+
+        <label for="referral">If You Are Registering Via A Referral, Please Mention Full Name Of The Employee Who
+            Referred You</label>
+        <input type="text" [(ngModel)]="personalInfo.referral" name="referral" id="referral">
+        <div class="horizontal-border"></div>
+        <div class="checkbox-container job-related-container">
+            <input [(ngModel)]="personalInfo.jobRelatedEmail" type="checkbox" name="roles" id="job-related-email">
+            <label for="job-related-email">Send me job related updates via mail</label>
+        </div>
+    </div>
+    <div class="profile-icon-container">
+        <div class="profile-inner-container">
+            <div class="profile-upload-container">
+                <a href="#">
+                    <img src="../../../assets/icons/account_circle.svg" alt="profile-picture" class="profile-icon">
+                    <p>UPLOAD DISPLAY PICTURE</p>
+                </a>
+            </div>
+            <p class="max-size-text">Max. image size: 5 MB</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="next-prev-container">
+    <div class="next-prev-inner-container">
+
+        <button [routerLink]="'qualification'" (click)="nextStep()" class="next-button">NEXT</button>
+    </div>
+</div> -->
+
+
+<!-- <div class="checkbox-container" *ngFor="let item of roles">
+                <input type="checkbox" name="roles" [id]="item" [checked]="personalInfo[item.toLowerCase().replace(/ /g, '')]" (change)="updateRole(item)">
+                <label [for]="item">{{item | titlecase}}</label>
+            </div> -->
+
+
+
+
+<form [formGroup]="personalInfo" (ngSubmit)="nextStep">
+
+    
+    <div class="container">
+        <div class="information">
+            
+            
+            
+            <div class="error-field" *ngIf="FirstName.errors?.['required'] && (FirstName.touched || FirstName.dirty)">
+                First Name is required
+            </div>
+            <div class="error-field" *ngIf="FirstName.errors?.['minlength']">
+                First Name is too short
+            </div>
+            <div class="error-field" *ngIf="FirstName.errors?.['pattern']">
+                First Name is not valid
+            </div>
+            <label for="firstName">First Name*</label>
+            <input type="text" formControlName="firstName" name="firstName" id="firstName">
+            <div class="horizontal-border"></div>
+            <div class="error-field" *ngIf="LastName.errors?.['required'] && (LastName.touched || LastName.dirty)">
+                Last Name is required
+            </div>
+            <div class="error-field" *ngIf="LastName.errors?.['minlength']">
+                Last Name is too short
+            </div>
+            <div class="error-field" *ngIf="LastName.errors?.['pattern']">
+                Last Name is not valid
+            </div>
+            <label for="lastName">Last Name*</label>
+            <input type="text" formControlName="lastName" name="lastName" id="lastName">
+            <div class="horizontal-border"></div>
+            <div class="error-field" *ngIf="Email.errors?.['required'] && (Email.touched || Email.dirty)">
+                Email is required
+            </div>
+            <div class="error-field" *ngIf="Email.errors?.['email']">
+                Email is not valid
+            </div>
+            <label for="email">Email*</label>
+            <input type="text" formControlName="email" name="email" id="email">
+            <div class="horizontal-border"></div>
+            <div class="error-field" *ngIf="PhoneNumber.errors?.['required'] && (PhoneNumber.touched || PhoneNumber.dirty)">
+                Phone Number is required
+            </div>
+            <div class="error-field" *ngIf="PhoneNumber.errors?.['pattern'] || PhoneNumber.errors?.['minlength'] || PhoneCode.errors?.['pattern']">
+                Phone is not valid
+            </div>
+            <label for="phoneNumber">Phone Number*</label>
+            <div class="phone-number-container">
+                <p>+</p>
+                <input type="text" formControlName="phoneCode" name="phoneNumber" id="phoneNumberCode">
+                <input type="text" formControlName="phoneNumber" name="phoneNumber" id="phoneNumber">
+            </div>
+            <div class="resume-container">
+                <input type="file" formControlName="resume" name="uploadfile" id="img">
+                <label for="img">
+                    <img src="../../../assets/icons/Upload.svg" alt="upload icon" class="upload-icon">
+                    UPLOAD RESUME
+                </label>
+            </div>
+            
+            <label for="portfolio">Enter Portfolio URL (if any)</label>
+            <input type="text" formControlName="portfolio" name="portfolio" id="portfolio">
+            <div class="horizontal-border"></div>
+            <div class="roles-container">
+                
+                <label for="roles">Preferred Job Roles*</label>
+                
+                <div class="checkbox-container">
+                    <input formControlName="industrialDesigner" type="checkbox" name="roles"
+                    id="industrial-designer">
+                    <label for="industrial-designer">Industrial Designer</label>
+                </div>
+                <div class="checkbox-container">
+                    <input formControlName="softwareEngineer" type="checkbox" name="roles" id="software-engineer">
+                    <label for="software-engineer">Software Engineer</label>
+                </div>
+                <div class="checkbox-container">
+                    <input formControlName="softwareQualityEngineer" type="checkbox" name="roles"
+                    id="software-quality-engineer">
+                    <label for="software-quality-engineer">Software Quality Engineer</label>
+                </div>
+            </div>
+            
+            <label for="referral">If You Are Registering Via A Referral, Please Mention Full Name Of The Employee Who
+                Referred You</label>
+                <input type="text" formControlName="referral" name="referral" id="referral">
+                <div class="horizontal-border"></div>
+            <label for="password">Create Password</label>
+                <input type="text" formControlName="password" name="password" id="password">
+                <div class="horizontal-border"></div>
+                <div class="checkbox-container job-related-container">
+                    <input formControlName="jobRelatedEmail" type="checkbox" name="roles" id="job-related-email">
+                    <label for="job-related-email">Send me job related updates via mail</label>
+                </div>
+            </div>
+            <div class="profile-icon-container">
+                <div class="profile-inner-container">
+                    <div class="profile-upload-container">
+                        <a href="#">
+                            <img src="../../../assets/icons/account_circle.svg" alt="profile-picture" class="profile-icon">
+                            <p>UPLOAD DISPLAY PICTURE</p>
+                        </a>
+                    </div>
+                    <p class="max-size-text">Max. image size: 5 MB</p>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="next-prev-container">
+            <div class="next-prev-inner-container">
+                
+                <button (click)="nextStep()" class="next-button">NEXT</button>
+            </div>
+        </div>
+</form>

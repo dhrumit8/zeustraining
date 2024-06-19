@@ -1,0 +1,158 @@
+@font-face {
+  font-family: Quicksand;
+  src: url(../assets/QuicksandFont/Quicksand-VariableFont_wght.ttf);
+}
+p {
+  margin: 0;
+}
+
+.container {
+  margin: 24px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2392156863);
+  display: flex;
+  flex-direction: column;
+}
+.container .inner-container {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+}
+.container .inner-container a {
+  margin-right: auto;
+  text-decoration: none;
+  color: #1f7a54;
+  font-size: 18px;
+  font-weight: 600;
+}
+.container .inner-container .sub-title {
+  color: #666666;
+  font-weight: 600;
+  font-size: 12px;
+  margin-top: 16px;
+}
+.container .inner-container .date-location {
+  display: flex;
+  margin-top: 8px;
+}
+.container .inner-container .date-location .location-icon {
+  width: 14px;
+  height: 14px;
+}
+.container .inner-container .date-location .location-text {
+  color: #666666;
+  font-weight: 600;
+  font-size: 12px;
+}
+.container .inner-container .date-location .vertical-line {
+  margin: 0px 16px 0px 16px;
+  background-color: #000000;
+  opacity: 0.12;
+  height: 16px;
+  width: 1px;
+}
+.container .inner-container p {
+  color: #222222;
+  font-size: 14px;
+  font-weight: 600;
+}
+.container .inner-container .horizontal-line {
+  height: 1px;
+  width: 100%;
+  background: #000000;
+  opacity: 0.12;
+  margin-top: 16px;
+}
+.container .inner-container .roles-container {
+  display: flex;
+  align-items: center;
+}
+.container .inner-container .roles-container .role-icon-container {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #222222;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+.container .inner-container .roles-container .role-icon-container .role-icon {
+  height: 16px;
+  width: 16px;
+}
+.container .inner-container .roles-container .horizontal-flex {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+.container .inner-container .roles-container p {
+  margin-right: 8px;
+}
+.container .inner-container .roles-container .vertical-line-role {
+  margin-right: 8px;
+  background-color: #000000;
+  opacity: 0.12;
+  height: 16px;
+  width: 1px;
+}
+.container .inner-container .opportunity-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18px;
+  width: 218px;
+  margin-top: 16px;
+  background-color: #EEDD6B;
+  border-radius: 9px;
+  color: #222222;
+  font-size: 10px;
+  font-weight: 600;
+}
+.container .inner-container .button-container {
+  display: flex;
+  justify-content: center;
+}
+.container .inner-container .button-container .view-button {
+  height: 28px;
+  width: 168px;
+  margin-top: 24px;
+  font-family: inherit;
+  border: none;
+  font-weight: 600;
+  background-color: #3FD28B;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2392156863);
+  border-radius: 2px;
+}
+
+.expires-container {
+  position: relative;
+  align-self: end;
+  right: 24px;
+  bottom: 9px;
+  height: 18px;
+  width: 107px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFE4E6;
+  color: #D10107;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 2px;
+  margin-bottom: -18px;
+}
+
+.with-expire {
+  margin-top: 33px;
+}
+
+@media all and (max-width: 650px) {
+  .container .inner-container .roles-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container .inner-container .roles-container .vertical-line-role {
+    display: none;
+  }
+}/*# sourceMappingURL=walkin-job-roles.component.css.map */

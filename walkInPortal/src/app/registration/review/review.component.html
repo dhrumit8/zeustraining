@@ -1,0 +1,496 @@
+<!-- <div class="title-with-edit">
+    <p>Personal Information</p>
+    <a (click)="editPersonal()">
+        <img src="../../../assets/icons/edit.svg" alt="edit icon" class="edit-icon">
+        <p>Edit</p>
+    </a>
+</div>
+
+
+<div class="personal-information">
+    <div class="information">
+        <label for="firstName">First Name</label>
+        <p>{{personalInfo.firstName}}</p>
+        <label for="LastName">Last Name</label>
+        <p>{{personalInfo.lastName}}</p>
+        <label for="email">Email</label>
+        <p>{{personalInfo.email}}</p>
+        <label for="phoneNumber">Phone Number</label>
+        <div class="phone-number-container">
+            <p>+</p>
+            <p>{{personalInfo.phoneCode}}</p>
+            <p>{{personalInfo.phoneNumber}}</p>
+        </div>
+        <div class="resume-container">
+            
+                <img src="../../../assets/icons/Upload_black.svg" alt="upload icon" class="upload-icon">
+                <p>
+                    UPLOAD RESUME
+                </p>
+                <p >{{personalInfo.resume}}</p>
+        </div>
+
+        <label for="portfolio">Enter Portfolio URL (if any)</label>
+        <p>{{personalInfo.portfolio}}</p>
+        <div class="roles-container">
+
+            <label for="roles">Preferred Job Roles</label>
+            <p *ngIf="personalInfo.industrialDesigner">Industrial Designer</p>
+            <p *ngIf="personalInfo.softwareEngineer">Software Engineer</p>
+            <p *ngIf="personalInfo.softwareQualityEngineer">Software Quality Engineer</p>
+        </div>
+        
+        <label for="referral">If You Are Registering Via A Referral, Please Mention Full Name Of The Employee Who Referred You</label>
+        <p>{{personalInfo.referral}}</p>
+        <div class="job-related-container">
+            <img *ngIf="personalInfo.jobRelatedEmail" src="../../../assets/icons/check_box_black.svg" alt="checkbox">
+            <img *ngIf="!personalInfo.jobRelatedEmail" src="../../../assets/icons/check_box_outline_black.svg" alt="checkbox">
+            <p>Send me job related updates via mail</p>
+        </div>
+    </div>
+    <div class="profile-icon-container">
+            <img src="../../../assets/icons/account_circle.svg" alt="profile-picture" class="profile-icon">
+    </div>
+</div>
+
+<div class="title-with-edit">
+    <p>Qualifications</p>
+    <a (click)="editQualification()">
+        <img src="../../../assets/icons/edit.svg" alt="edit icon" class="edit-icon">
+        <p>Edit</p>
+    </a>
+</div>
+
+<div class="qualification-header">
+    <p>Educational Qualifications</p>
+</div>
+
+<div class="educational-container">
+    <div class="inner-container">
+        <label for="percentage">Aggregate Percentage*</label>
+        <p>{{qualificationInfo.percentage}}</p>
+        <label for="yearOfPassing">Year of Passing*</label>
+        <p>{{qualificationInfo.yearOfPassing}}</p>
+
+        <div class="flex-horizontal">
+            <div class="flex-vertical">
+
+                <label for="qualification">Qualification*</label>
+                <p>{{qualificationInfo.qualification}}</p>
+            </div>
+            <div class="extra-div"></div>
+            <div class="flex-vertical">
+
+                <label for="stream">Stream*</label>
+                <p>{{qualificationInfo.stream}}</p>
+            </div>
+        </div>
+
+
+        <div class="flex-horizontal">
+            <div class="flex-vertical">
+                
+                <label for="college">College*</label>
+                <p>{{qualificationInfo.college}}</p>
+            </div>
+            <div class="extra-div"></div>
+            <div class="flex-vertical">
+
+                <label for="otherCollege">If others, please enter your college name</label>
+                <p>{{qualificationInfo.otherCollege}}</p>
+                
+            </div>
+        </div>
+
+
+
+        <label for="collegeLocation">Where is your college located?*</label>
+        <p class="remove-margin-bottom">{{qualificationInfo.location}}</p>
+
+    </div>
+</div>
+
+
+<div class="qualification-header">
+    <p>Professional Qualifications</p>
+</div>
+
+<div class="professional-container">
+    <div class="inner-container">
+        <label for="applicantType">Applicant Type*</label>   
+        <p class="remove-margin-bottom">Fresher/Experienced</p>
+    </div>
+</div>
+
+
+<div class="fresher-experienced-container">
+    <div class="inner-container">
+        <label for="yearsOfExperience">Years Of Experience*</label>
+        <p>5</p>
+        <label for="currentCTC">Current CTC* (In Rupees)</label>
+        <p>5,00,000</p>
+        <label for="expectedCTC">Expected CTC* (In Rupees)</label>
+        <p>6,50,000</p>
+
+        <div class="expertise-tech-container">
+            <label for="expertiseTechnology">Select All The Technologies You Expertise In*</label>
+            <p>Javascript</p>
+        </div>
+
+        <div class="flex-horizontal">
+            <div class="flex-vertical">
+                <label for="otherExpertiseTech">If Others, Please mention</label>
+                <p>other</p>
+            </div>
+            <div class="extra-div"></div>
+            <div class="flex-vertical"></div>
+        </div>
+
+        <div class="familiar-tech-container">
+            <label for="familiarTechnology">Select All The Technologies You Expertise In*</label>
+            <p>Angular JS</p>
+            <p>React</p>
+        </div>
+
+        <div class="flex-horizontal">
+            <div class="flex-vertical">
+                <label for="otherFamiliarTech">If Others, Please mention</label>
+                <p>other</p>
+            </div>
+            <div class="extra-div"></div>
+            <div class="flex-vertical"></div>
+        </div>
+
+        <label for="onNoticePeriod">Are You Currently On Notice Period?*</label>
+        <div class="yes-no-container">
+            <p>Yes</p>
+        </div>
+
+        <div class="flex-horizontal">
+            <div class="flex-vertical">
+                <label for="noticePeriodEnd">If Yes, When Will Your Notice Period End?*</label>
+                <p>20-May-2020</p>
+            </div>
+            <div class="extra-div"></div>
+            <div class="flex-vertical">
+                <label for="noticePeriodLength">How Long Is Your Notice Period?* (Mention In Months)</label>
+                <p>2 Months</p>
+            </div>
+        </div>
+
+        <label for="isAppeared">Have You Appeared For Any Test By Zeus In The Past 12 Months?*</label>
+        <div class="yes-no-container">
+            <p>No</p>
+        </div>
+
+        <div class="flex-horizontal">
+            <div class="flex-vertical">
+                <label for="roleApplied">If Yes, Which Role Did You Apply For?</label>
+                <p class="remove-margin-bottom">role</p>
+            </div>
+            <div class="extra-div"></div>
+            <div class="flex-vertical"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="fresher-experienced-container">
+    <div class="inner-container">
+        
+        <div class="familiar-tech-container">
+            <label for="familiarTechnology">Select All The Technologies You Expertise In*</label>
+            <p>Javascript</p>
+            <p>Angular JS</p>
+            <p>React</p>
+        </div>
+
+        <div class="flex-horizontal">
+            <div class="flex-vertical">
+                <label for="otherFamiliarTech">If Others, Please mention</label>
+                <p>other</p>
+            </div>
+            <div class="extra-div"></div>
+            <div class="flex-vertical"></div>
+        </div>
+
+
+        <label for="isAppeared">Have You Appeared For Any Test By Zeus In The Past 12 Months?*</label>
+        <div class="yes-no-container">
+            <p>Yes</p>
+        </div>
+
+        <div class="flex-horizontal">
+            <div class="flex-vertical">
+                <label for="roleApplied">If Yes, Which Role Did You Apply For?</label>
+                <p class="remove-margin-bottom">Role</p>
+            </div>
+            <div class="extra-div"></div>
+            <div class="flex-vertical"></div>
+        </div>
+    </div>
+</div>
+
+<div class="next-prev-container">
+    <div class="next-prev-inner-container">
+
+        <button [routerLink]="'/registration/qualification'" class="previous-button">PREVIOUS</button>
+    </div>
+</div> -->
+
+
+<div class="title-with-edit">
+    <p>Personal Information</p>
+    <a (click)="editPersonal()">
+        <img src="../../../assets/icons/edit.svg" alt="edit icon" class="edit-icon">
+        <p>Edit</p>
+    </a>
+</div>
+
+
+<div class="personal-information" *ngIf="personalInfo">
+    <div class="information">
+        <label for="firstName">First Name</label>
+        <p >{{ personalInfo.get('firstName')?.value }}</p>
+        <label for="LastName">Last Name</label>
+        <p>{{ personalInfo.get('lastName')?.value }}</p>
+        <label for="email">Email</label>
+        <p>{{ personalInfo.get('email')?.value }}</p>
+        <label for="phoneNumber">Phone Number</label>
+        <div class="phone-number-container">
+            <p>+</p>
+            <p>{{ personalInfo.get('phoneCode')?.value }}</p>
+            <p>{{ personalInfo.get('phoneNumber')?.value }}</p>
+        </div>
+        <div class="resume-container">
+            
+                <img src="../../../assets/icons/Upload_black.svg" alt="upload icon" class="upload-icon">
+                <p>
+                    UPLOAD RESUME
+                </p>
+                <p>{{ personalInfo.get('resume')?.value }}</p>
+        </div>
+
+        <label for="portfolio">Enter Portfolio URL (if any)</label>
+        <p>{{ personalInfo.get('portfolio')?.value }}</p>
+        <div class="roles-container">
+
+            <label for="roles">Preferred Job Roles</label>
+            <p *ngIf="personalInfo.get('industrialDesigner')?.value">Industrial Designer</p>
+            <p *ngIf="personalInfo.get('softwareEngineer')?.value">Software Engineer</p>
+            <p *ngIf="personalInfo.get('softwareQualityEngineer')?.value">Software Quality Engineer</p>
+        </div>
+        
+        <label for="referral">If You Are Registering Via A Referral, Please Mention Full Name Of The Employee Who Referred You</label>
+        <p>{{ personalInfo.get('referral')?.value }}</p>
+        <div class="job-related-container">
+            <img *ngIf="personalInfo.get('jobRelatedEmail')?.value" src="../../../assets/icons/check_box_black.svg" alt="checkbox">
+            <img *ngIf="!personalInfo.get('jobRelatedEmail')?.value" src="../../../assets/icons/check_box_outline_black.svg" alt="checkbox">
+            <p>Send me job related updates via mail</p>
+        </div>
+    </div>
+    <div class="profile-icon-container">
+            <img src="../../../assets/icons/account_circle.svg" alt="profile-picture" class="profile-icon">
+    </div>
+</div>
+
+<div class="title-with-edit">
+    <p>Qualifications</p>
+    <a (click)="editQualification()">
+        <img src="../../../assets/icons/edit.svg" alt="edit icon" class="edit-icon">
+        <p>Edit</p>
+    </a>
+</div>
+
+<div class="qualification-header">
+    <p>Educational Qualifications</p>
+</div>
+
+<div class="educational-container">
+    <div class="inner-container">
+        <label for="percentage">Aggregate Percentage*</label>
+        <p>{{ qualificationInfo?.get('percentage')?.value }}</p>
+        <label for="yearOfPassing">Year of Passing*</label>
+        <p>{{ qualificationInfo?.get('yearOfPassing')?.value }}</p>
+
+        <div class="flex-horizontal">
+            <div class="flex-vertical">
+
+                <label for="qualification">Qualification*</label>
+                <p>{{ qualificationInfo?.get('qualification')?.value }}</p>
+            </div>
+            <div class="extra-div"></div>
+            <div class="flex-vertical">
+
+                <label for="stream">Stream*</label>
+                <p>{{ qualificationInfo?.get('stream')?.value }}</p>
+            </div>
+        </div>
+
+
+        <div class="flex-horizontal">
+            <div class="flex-vertical">
+                
+                <label for="college">College*</label>
+                <p>{{ qualificationInfo?.get('college')?.value }}</p>
+            </div>
+            <div class="extra-div"></div>
+            <div class="flex-vertical">
+
+                <label for="otherCollege">If others, please enter your college name</label>
+                <p>{{ qualificationInfo?.get('otherCollege')?.value }}</p>
+                
+            </div>
+        </div>
+
+
+
+        <label for="collegeLocation">Where is your college located?*</label>
+        <p class="remove-margin-bottom">{{ qualificationInfo?.get('collegeLocation')?.value }}</p>
+
+    </div>
+</div>
+
+
+<div class="qualification-header">
+    <p>Professional Qualifications</p>
+</div>
+
+<div class="professional-container">
+    <div class="inner-container">
+        <label for="applicantType">Applicant Type*</label>   
+        <p class="remove-margin-bottom">{{ professionalQualificationInfo?.get('applicantType')?.value }}</p>
+    </div>
+</div>
+
+
+<div *ngIf="professionalQualificationInfo?.get('applicantType')?.value == 'Experienced'" class="fresher-experienced-container">
+    <div class="inner-container">
+        <label for="yearsOfExperience">Years Of Experience*</label>
+        <p>{{experiencedInfo?.get('yearsOfExperience')?.value}}</p>
+        <label for="currentCTC">Current CTC* (In Rupees)</label>
+        <p>{{experiencedInfo?.get('currentCTC')?.value}}</p>
+        <label for="expectedCTC">Expected CTC* (In Rupees)</label>
+        <p>{{experiencedInfo?.get('expectedCTC')?.value}}</p>
+
+        <div class="expertise-tech-container">
+            <label for="expertiseTechnology">Select All The Technologies You Expertise In*</label>
+            <p *ngIf="experiencedInfo?.get('javascriptE')?.value">Javascript</p>
+            <p *ngIf="experiencedInfo?.get('angularJSE')?.value">Angular JS</p>
+            <p *ngIf="experiencedInfo?.get('reactE')?.value">React</p>
+            <p *ngIf="experiencedInfo?.get('nodeJSE')?.value">Node JS</p>
+        </div>
+
+        <div class="flex-horizontal">
+            <div class="flex-vertical">
+                <label for="otherExpertiseTech">If Others, Please mention</label>
+                <p *ngIf="experiencedInfo?.get('otherTechE')?.value">{{experiencedInfo?.get('otherTechE')?.value}}</p>
+                <p *ngIf="!experiencedInfo?.get('otherTechE')?.value">-</p>
+            </div>
+            <div class="extra-div"></div>
+            <div class="flex-vertical"></div>
+        </div>
+
+        <div class="familiar-tech-container">
+            <label for="familiarTechnology">Select All The Technologies You Expertise In*</label>
+            <p *ngIf="experiencedInfo?.get('javascriptF')?.value">Javascript</p>
+            <p *ngIf="experiencedInfo?.get('angularJSF')?.value">Angular JS</p>
+            <p *ngIf="experiencedInfo?.get('reactF')?.value">React</p>
+            <p *ngIf="experiencedInfo?.get('nodeJSF')?.value">Node JS</p>
+        </div>
+
+        <div class="flex-horizontal">
+            <div class="flex-vertical">
+                <label for="otherFamiliarTech">If Others, Please mention</label>
+                <p *ngIf="experiencedInfo?.get('otherTechF')?.value">{{experiencedInfo?.get('otherTechF')?.value}}</p>
+                <p *ngIf="!experiencedInfo?.get('otherTechF')?.value">-</p>
+            </div>
+            <div class="extra-div"></div>
+            <div class="flex-vertical"></div>
+        </div>
+
+        <label for="onNoticePeriod">Are You Currently On Notice Period?*</label>
+        <div class="yes-no-container">
+            <p *ngIf="experiencedInfo?.get('onNoticePeriod')?.value">Yes</p>
+            <p *ngIf="!experiencedInfo?.get('onNoticePeriod')?.value">No</p>
+        </div>
+
+        <div class="flex-horizontal">
+            <div class="flex-vertical">
+                <label for="noticePeriodEnd">If Yes, When Will Your Notice Period End?*</label>
+                <p *ngIf="experiencedInfo?.get('noticePeriodEnd')?.value">{{experiencedInfo?.get('noticePeriodEnd')?.value}}</p>
+                <p *ngIf="!experiencedInfo?.get('noticePeriodEnd')?.value">-</p>
+            </div>
+            <div class="extra-div"></div>
+            <div class="flex-vertical">
+                <label for="noticePeriodLength">How Long Is Your Notice Period?* (Mention In Months)</label>
+                <p *ngIf="experiencedInfo?.get('noticePeriodLength')?.value">{{experiencedInfo?.get('noticePeriodLength')?.value}} Month</p>
+                <p *ngIf="!experiencedInfo?.get('noticePeriodLength')?.value">-</p>
+            </div>
+        </div>
+
+        <label for="isAppeared">Have You Appeared For Any Test By Zeus In The Past 12 Months?*</label>
+        <div class="yes-no-container">
+            <p *ngIf="experiencedInfo?.get('appearedZeusTest')?.value">Yes</p>
+            <p *ngIf="!experiencedInfo?.get('appearedZeusTest')?.value">No</p>
+        </div>
+
+        <div class="flex-horizontal">
+            <div class="flex-vertical">
+                <label for="roleApplied">If Yes, Which Role Did You Apply For?</label>
+                <p class="remove-margin-bottom" *ngIf="experiencedInfo?.get('roleApplied')?.value">{{experiencedInfo?.get('roleApplied')?.value}}</p>
+                <p class="remove-margin-bottom" *ngIf="!experiencedInfo?.get('roleApplied')?.value">-</p>
+            </div>
+            <div class="extra-div"></div>
+            <div class="flex-vertical"></div>
+        </div>
+    </div>
+</div>
+
+
+<div *ngIf="professionalQualificationInfo?.get('applicantType')?.value == 'Fresher'" class="fresher-experienced-container">
+    <div class="inner-container">
+        
+        <div class="familiar-tech-container">
+            <label for="familiarTechnology">Select All The Technologies You Expertise In</label>
+            <p *ngIf="fresherInfo?.get('javascript')?.value">Javascript</p>
+            <p *ngIf="fresherInfo?.get('angularJS')?.value">Angular JS</p>
+            <p *ngIf="fresherInfo?.get('react')?.value">React</p>
+            <p *ngIf="fresherInfo?.get('nodeJS')?.value">Node JS</p>
+        </div>
+
+        <div class="flex-horizontal">
+            <div class="flex-vertical">
+                <label for="otherFamiliarTech">If Others, Please mention</label>
+                <p *ngIf="fresherInfo?.get('otherTech')?.value">{{fresherInfo?.get('otherTech')?.value}}</p>
+                <p *ngIf="!fresherInfo?.get('otherTech')?.value">-</p>
+            </div>
+            <div class="extra-div"></div>
+            <div class="flex-vertical"></div>
+        </div>
+
+
+        <label for="isAppeared">Have You Appeared For Any Test By Zeus In The Past 12 Months?</label>
+        <div class="yes-no-container">
+            <p *ngIf="fresherInfo?.get('appearedZeusTest')?.value">Yes</p>
+            <p *ngIf="!fresherInfo?.get('appearedZeusTest')?.value">No</p>
+        </div>
+
+        <div class="flex-horizontal">
+            <div class="flex-vertical">
+                <label for="roleApplied">If Yes, Which Role Did You Apply For?</label>
+                <p class="remove-margin-bottom" *ngIf="fresherInfo?.get('roleApplied')?.value">{{fresherInfo?.get('roleApplied')?.value}}</p>
+                <p class="remove-margin-bottom" *ngIf="!fresherInfo?.get('roleApplied')?.value">-</p>
+            </div>
+            <div class="extra-div"></div>
+            <div class="flex-vertical"></div>
+        </div>
+    </div>
+</div>
+
+<div class="next-prev-container">
+    <div class="next-prev-inner-container">
+
+        <button [routerLink]="'/registration/qualification'" class="previous-button">PREVIOUS</button>
+    </div>
+</div>

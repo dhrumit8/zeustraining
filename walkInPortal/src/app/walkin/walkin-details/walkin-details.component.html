@@ -1,0 +1,281 @@
+<button [routerLink]="'/walkin/hallticket'" class="apply-button-external">APPLY</button>
+<div class="container">
+    <div class="inner-container">
+        <div class="title-apply-container">
+            <p class="walkin-title">{{job.title}}</p>
+            <button [routerLink]="'/walkin/hallticket'" class="apply-button">APPLY</button>
+        </div>
+        <p class="sub-title">Date & Time :</p>
+        <div class="date-location">
+            <p>{{job.startDate}} to {{job.endDate}}</p>
+            <div class="vertical-line"></div>
+            
+            <img src="../../../assets/icons/location_on_black_24dp.svg" alt="location icon" class="location-icon" />
+            <span class="location-text">{{job.location}}</span>
+        </div>
+        <div class="horizontal-line"></div>
+        <p class="sub-title">Job Roles:</p>
+        <div class="roles-container">
+            <div class="horizontal-flex" *ngIf="job.industrialDesigner">
+                
+                <div class="role-icon-container">
+                    <img src="../../../assets/icons/Instructional Designer.svg" alt="industrial designer icon"
+                    class="role-icon" />
+                </div>
+                <p>Industrial Designer</p>
+            </div>
+            <div class="horizontal-flex" *ngIf="job.softwareEngineer">
+                <div class="vertical-line-role"></div>
+                
+                <div class="role-icon-container">
+                    <img src="../../../assets/icons/Software Quality Engineer.svg" alt="software engineer logo"
+                    class="role-icon" />
+                </div>
+                <p>Software Engineer</p>
+            </div>
+            <div class="horizontal-flex" *ngIf="job.softwareQualityEngineer">
+                <div class="vertical-line-role"></div>
+                
+                <div class="role-icon-container">
+                    <img src="../../../assets/icons/Software Quality Engineer.svg" alt="software quality engineer logo"
+                    class="role-icon" />
+                </div>
+                <p>Software Quality Engineer</p>
+            </div>
+        </div>
+    </div>
+    <div class="pre-requisites-header">
+        <p>Pre-requisites & Application Process</p>
+        <div class="vertical-line"></div>
+        <a (click)="togglePreRequisite()">
+            <img src="../../../assets/icons/expand_less.svg" alt="expand less icon" />
+        </a>
+    </div>
+    <div [hidden]="hidePreRequisite" class="pre-requisites-container">
+        <p class="sub-title">General Instructions :</p>
+        <ul>
+            <li>- We have a two-year indemnity for permanent candidates. We will provide training to the selected
+                candidates.</li>
+                <li>- Candidates who have appeared for any test held by Zeus Learning in the past 12 months will not be
+                    allowed to appear for this recruitment test.</li>
+                </ul>
+                <div class="horizontal-line"></div>
+                <p class="sub-title">Instructions for the Exam :</p>
+                <ul>
+                    <li>- Candidates are requested to log in half an hour prior to the exam start time as they would need to
+                        capture their image using a web camera. By taking this test, you are permitting the examination system
+                        to capture your video for invigilation purposes.</li>
+                        <li>- Candidates would not be able to appear for the exam if the web camera attached to their system is not
+                            functional.</li>
+                            <li>- The web camera of your system must be enabled and must remain switched on throughout the examination.
+                                In the event of non-receipt of a webcam, your examination will be considered null and void.</li>
+                                <li>- Candidate's audio and video will be recorded during the examination and will also be monitored by a
+                                    live proctor. The proctor may terminate your exam in case he/she observes any malpractice during the
+                exam.</li>
+                <li>- Candidates are advised to use their own Laptop/PC with a stable internet connection (min 1 Mbps)
+                    during the exam.</li>
+                    <li>- Candidates cannot use an iOS system/device for this exam.</li>
+                </ul>
+                <div class="horizontal-line"></div>
+                <p class="sub-title">Minimum System Requirements :</p>
+                <ul>
+                    <li>- Personal Laptop or Desktop computer in working condition with good quality camera (you can use Windows
+                        7 and above).</li>
+                        <li>- The latest version of Google Chrome Browser only.</li>
+                        <li>- Please note that Internet speed should be minimum 1 Mbps.</li>
+                        <li>- Do not use a MacBook or iPad for the proctored exam.</li>
+                    </ul>
+                    <div class="horizontal-line"></div>
+                    <p class="sub-title">Process :</p>
+                    <ul>
+                        <li>- Every round is an elimination round. Candidates need to clear all rounds to get selected.</li>
+                        <br>
+                        <li>Round I : 4th August, 2018</li>
+                        <li>
+                            Aptitude Test : 25 Questions
+                        </li>
+                        <br>
+                        <li>
+                            Round II (Interview) : 4th August, 2018.
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+            
+            
+            <div class="time-slot-preference-container">
+                <div class="time-slot-inner-container">
+                    
+                    <p>Time Slots & Preferences</p>
+                    <div class="time-slot-container">
+                        
+                        <label for="time-slot">Select a Time Slot :</label>
+                        <div class="radio-container">
+                            <input type="radio" name="time-slot" id="morning">
+                            <label for="morning">9:00 AM to 11:00 AM</label>
+                        </div>
+                        <div class="radio-container">
+                            <input type="radio" name="time-slot" id="afternoon">
+                            <label for="afternoon">1:00 PM to 3:00 PM</label>
+                        </div>
+                    </div>
+                    <div class="horizontal-line"></div>
+                    <div class="roles-checkbox-container">
+                        <label for="roles">Select Your Preference :</label>
+                        <div class="checkbox-container">
+                            <input type="checkbox" name="roles" id="industrial-designer">
+                            <label for="industrial-designer">Industrial Designer</label>
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="checkbox" name="roles" id="software-engineer">
+                            <label for="software-engineer">Software Engineer</label>
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="checkbox" name="roles" id="software-quality-engineer">
+                            <label for="software-quality-engineer">Software Quality Engineer</label>
+                        </div>
+                    </div>
+                    <div class="horizontal-line"></div>
+                    <div class="resume-container">
+                        <a href="#">
+                            <img src="../../../assets/icons/Upload.svg" alt="upload icon" class="upload-icon">
+                            UPLOAD UPDATED RESUME
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="roles-detail-container">
+                <div class="roles-header">
+                    <p>Instructional Designer</p>
+                    <div class="vertical-line"></div>
+                    <a (click)="toggleHideRoleID()">
+                        <img src="../../../assets/icons/expand_less.svg" alt="expand less icon" />
+                    </a>
+                </div>
+                <div [hidden]="hideRoleID" class="roles-details">
+                    <p class="sub-title">gross compensation package :</p>
+                    <ul>
+                        <li>Rs. 5,00,000 lpa</li>
+                    </ul>
+                    <div class="horizontal-line"></div>
+                    <p class="sub-title">Role Description :</p>
+                    <ul>
+                        <li>- Generate highly interactive and innovative instructional strategies for e-learning solutions</li>
+                        <li>- Develop course structure and learning specifications addressing the requirements of the target
+                            audience</li>
+                            <li>- Construct appropriate testing strategies to ensure learners' understanding and performance</li>
+                            <li>- Address usability issues</li>
+                            <li>- Keep abreast of new trends in e-learning</li>
+                            <li>- Ensure that the instructional strategies are as per global standards</li>
+                            <li>- Prepare instructional design checklists and guidelines</li>
+                            <li>- Check for quality assurance</li>
+                        </ul>
+                        <div class="horizontal-line"></div>
+                        <p class="sub-title">Requirements :</p>
+                        <ul>
+                            <li>- Experience in creating instructional plans and course maps.</li>
+                            <li>- Experience in the use of media like graphics, illustrations, photographs, audio, video, animations,
+                                and simulations in instruction</li>
+                                <li>- Awareness of different instructional design models and familiarity with instructional and learning
+                                    theories</li>
+                                    <li>- Awareness of latest trends in e-learning and instructional design</li>
+                                    <li>- Strong client consulting/interfacing skills.</li>
+                                    <li>- Ability to guide clients to focus on specific objectives and teaching points</li>
+                                    <li>- Strong meeting facilitation, presentation and interpersonal skills</li>
+                                    <li>- A thorough understanding of the web as an instructional medium</li>
+                                    <li>- Post graduate degree in Education, Instructional Design, Mass Communication or Journalism</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="roles-detail-container">
+                            <div class="roles-header">
+                                <p>Software Engineer</p>
+                                <div class="vertical-line"></div>
+                                <a (click)="toggleHideRoleSE()">
+                                    <img src="../../../assets/icons/expand_less.svg" alt="expand less icon" />
+                                </a>
+                            </div>
+                            <div [hidden]="hideRoleSE" class="roles-details">
+                                <p class="sub-title">gross compensation package :</p>
+                                <ul>
+                                    <li>Rs. 5,00,000 lpa</li>
+                                </ul>
+                                <div class="horizontal-line"></div>
+                                <p class="sub-title">Role Description :</p>
+                                <ul>
+                                    <li>- Generate highly interactive and innovative instructional strategies for e-learning solutions</li>
+                                    <li>- Develop course structure and learning specifications addressing the requirements of the target
+                                        audience</li>
+                                        <li>- Construct appropriate testing strategies to ensure learners' understanding and performance</li>
+                                        <li>- Address usability issues</li>
+                                        <li>- Keep abreast of new trends in e-learning</li>
+                                        <li>- Ensure that the instructional strategies are as per global standards</li>
+                                        <li>- Prepare instructional design checklists and guidelines</li>
+                                        <li>- Check for quality assurance</li>
+                                    </ul>
+                                    <div class="horizontal-line"></div>
+                                    <p class="sub-title">Requirements :</p>
+                                    <ul>
+                                        <li>- Experience in creating instructional plans and course maps.</li>
+                                        <li>- Experience in the use of media like graphics, illustrations, photographs, audio, video, animations,
+                                            and simulations in instruction</li>
+                                            <li>- Awareness of different instructional design models and familiarity with instructional and learning
+                                                theories</li>
+                                                <li>- Awareness of latest trends in e-learning and instructional design</li>
+                                                <li>- Strong client consulting/interfacing skills.</li>
+                                                <li>- Ability to guide clients to focus on specific objectives and teaching points</li>
+                                                <li>- Strong meeting facilitation, presentation and interpersonal skills</li>
+                                                <li>- A thorough understanding of the web as an instructional medium</li>
+                                                <li>- Post graduate degree in Education, Instructional Design, Mass Communication or Journalism</li>
+                                            </ul>
+                                        </div>
+</div>
+
+<div class="roles-detail-container">
+    <div class="roles-header">
+        <p>Software Quality Engineer</p>
+        <div class="vertical-line"></div>
+        <a (click)="toggleHideRoleSQE()">
+            <img src="../../../assets/icons/expand_less.svg" alt="expand less icon" />
+        </a>
+    </div>
+    <div [hidden]="hideRoleSQE" class="roles-details">
+        <p class="sub-title">gross compensation package :</p>
+        <ul>
+            <li>Rs. 5,00,000 lpa</li>
+        </ul>
+        <div class="horizontal-line"></div>
+        <p class="sub-title">Role Description :</p>
+        <ul>
+            <li>- Generate highly interactive and innovative instructional strategies for e-learning solutions</li>
+            <li>- Develop course structure and learning specifications addressing the requirements of the target
+                audience</li>
+                <li>- Construct appropriate testing strategies to ensure learners' understanding and performance</li>
+                <li>- Address usability issues</li>
+                <li>- Keep abreast of new trends in e-learning</li>
+                <li>- Ensure that the instructional strategies are as per global standards</li>
+                <li>- Prepare instructional design checklists and guidelines</li>
+                <li>- Check for quality assurance</li>
+            </ul>
+            <div class="horizontal-line"></div>
+            <p class="sub-title">Requirements :</p>
+            <ul>
+                <li>- Experience in creating instructional plans and course maps.</li>
+                <li>- Experience in the use of media like graphics, illustrations, photographs, audio, video, animations,
+                    and simulations in instruction</li>
+                    <li>- Awareness of different instructional design models and familiarity with instructional and learning
+                        theories</li>
+            <li>- Awareness of latest trends in e-learning and instructional design</li>
+            <li>- Strong client consulting/interfacing skills.</li>
+            <li>- Ability to guide clients to focus on specific objectives and teaching points</li>
+            <li>- Strong meeting facilitation, presentation and interpersonal skills</li>
+            <li>- A thorough understanding of the web as an instructional medium</li>
+            <li>- Post graduate degree in Education, Instructional Design, Mass Communication or Journalism</li>
+        </ul>
+    </div>
+</div>

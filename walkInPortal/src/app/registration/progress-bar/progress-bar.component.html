@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="inner-container">
+        <div *ngIf="currentStepIndex == 0" class="circle done">
+            <p>1</p>
+        </div>
+        <div *ngIf="currentStepIndex > 0" class="circle done">
+            <a [routerLink]="'/registration'">
+                <img src="../../../assets/icons/edit_black.svg" alt="edit-icon">
+            </a>
+        </div>
+        <p class="text">Personal Information</p>
+    </div>
+    <div class="line"></div>
+    <div class="inner-container">
+        <div *ngIf="currentStepIndex == 0" class="circle remaining">
+            <p>2</p>
+        </div>
+        <div *ngIf="currentStepIndex == 1" class="circle done">
+            <p>2</p>
+        </div>
+        <div *ngIf="currentStepIndex == 2" class="circle done">
+            <a [routerLink]="'/registration/qualification'">
+                <img src="../../../assets/icons/edit_black.svg" alt="edit-icon">
+            </a>
+        </div>
+        <p class="text">Qualifications</p>
+    </div>
+    <div class="line"></div>
+    <div class="inner-container">
+        <div *ngIf="currentStepIndex < 2" class="circle remaining">
+            <p>3</p>
+        </div>
+        <div *ngIf="currentStepIndex == 2" class="circle done">
+            <p>3</p>
+        </div>
+        <p class="text">Review and Proceed</p>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<!-- <app-educational-qualification></app-educational-qualification> -->
+<!-- <app-educational-qualification *ngIf="currentStepIndex === 1"></app-educational-qualification> -->
+<app-educational-qualification></app-educational-qualification>
+<app-professional-qualification></app-professional-qualification>
+<!-- <app-fresher-qualification></app-fresher-qualification>
+<app-experienced-qualification></app-experienced-qualification> -->
+
+<!-- <app-professional-qualification *ngIf="currentStepIndex === 1"
+    (showFresherQualification)="showFresher = $event"
+    (showExperiencedQualification)="showExperienced = $event">
+</app-professional-qualification>
+    <app-fresher-qualification *ngIf="showFresher"></app-fresher-qualification>
+<app-experienced-qualification *ngIf="showExperienced"></app-experienced-qualification> -->
+<!-- 
+<app-professional-qualification  *ngIf="currentStepIndex === 1"
+    (showFresherQualification)="showFresher = $event"
+    (showExperiencedQualification)="showExperienced = $event">
+</app-professional-qualification> -->
+
+<!-- <app-fresher-qualification *ngIf="showFresher && currentStepIndex === 1"></app-fresher-qualification>
+<app-experienced-qualification *ngIf="showExperienced && currentStepIndex === 1"></app-experienced-qualification> -->
+
+
+<div class="next-prev-container">
+    <div class="next-prev-inner-container">
+
+        <button [routerLink]="'/registration'" class="previous-button">PREVIOUS</button>
+        <button (click)="nextStep()" class="next-button">NEXT</button>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

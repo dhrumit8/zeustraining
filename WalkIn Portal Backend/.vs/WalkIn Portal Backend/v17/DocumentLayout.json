@@ -1,0 +1,326 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|d:\\zeus\\zeustraining\\walkin portal backend\\walkin portal backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|solutionrelative:walkin portal backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|d:\\zeus\\zeustraining\\walkin portal backend\\walkin portal backend\\models\\experiencedqualification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|solutionrelative:walkin portal backend\\models\\experiencedqualification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|d:\\zeus\\zeustraining\\walkin portal backend\\walkin portal backend\\models\\educationalqualification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|solutionrelative:walkin portal backend\\models\\educationalqualification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|d:\\zeus\\zeustraining\\walkin portal backend\\walkin portal backend\\models\\createuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|solutionrelative:walkin portal backend\\models\\createuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|d:\\zeus\\zeustraining\\walkin portal backend\\walkin portal backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|solutionrelative:walkin portal backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|d:\\zeus\\zeustraining\\walkin portal backend\\walkin portal backend\\models\\walkinportalcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|solutionrelative:walkin portal backend\\models\\walkinportalcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|d:\\zeus\\zeustraining\\walkin portal backend\\walkin portal backend\\models\\fresherqualification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|solutionrelative:walkin portal backend\\models\\fresherqualification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|d:\\zeus\\zeustraining\\walkin portal backend\\walkin portal backend\\models\\userdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|solutionrelative:walkin portal backend\\models\\userdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|d:\\zeus\\zeustraining\\walkin portal backend\\walkin portal backend\\models\\rolesavailable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|solutionrelative:walkin portal backend\\models\\rolesavailable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|d:\\zeus\\zeustraining\\walkin portal backend\\walkin portal backend\\models\\professionalqualification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|solutionrelative:walkin portal backend\\models\\professionalqualification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|d:\\zeus\\zeustraining\\walkin portal backend\\walkin portal backend\\models\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|solutionrelative:walkin portal backend\\models\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|d:\\zeus\\zeustraining\\walkin portal backend\\walkin portal backend\\models\\rolesdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|solutionrelative:walkin portal backend\\models\\rolesdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|d:\\zeus\\zeustraining\\walkin portal backend\\walkin portal backend\\models\\userhasjobrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|solutionrelative:walkin portal backend\\models\\userhasjobrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|d:\\zeus\\zeustraining\\walkin portal backend\\walkin portal backend\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|solutionrelative:walkin portal backend\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|d:\\zeus\\zeustraining\\walkin portal backend\\walkin portal backend\\models\\experiencedhastechnologiesfamiliar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|solutionrelative:walkin portal backend\\models\\experiencedhastechnologiesfamiliar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|d:\\zeus\\zeustraining\\walkin portal backend\\walkin portal backend\\models\\experiencedhastechnologiesexpertise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|solutionrelative:walkin portal backend\\models\\experiencedhastechnologiesexpertise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|d:\\zeus\\zeustraining\\walkin portal backend\\walkin portal backend\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|solutionrelative:walkin portal backend\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|d:\\zeus\\zeustraining\\walkin portal backend\\walkin portal backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|solutionrelative:walkin portal backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|d:\\zeus\\zeustraining\\walkin portal backend\\walkin portal backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{68AF130D-9D05-418A-886C-F960403F9154}|WalkIn Portal Backend\\WalkIn Portal Backend.csproj|solutionrelative:walkin portal backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Job.cs",
+              "DocumentMoniker": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\Job.cs",
+              "RelativeDocumentMoniker": "WalkIn Portal Backend\\Models\\Job.cs",
+              "ToolTip": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\Job.cs",
+              "RelativeToolTip": "WalkIn Portal Backend\\Models\\Job.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAcwB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T16:54:00.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Program.cs",
+              "RelativeDocumentMoniker": "WalkIn Portal Backend\\Program.cs",
+              "ToolTip": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Program.cs",
+              "RelativeToolTip": "WalkIn Portal Backend\\Program.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAjwCoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T05:03:31.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RolesAvailable.cs",
+              "DocumentMoniker": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\RolesAvailable.cs",
+              "RelativeDocumentMoniker": "WalkIn Portal Backend\\Models\\RolesAvailable.cs",
+              "ToolTip": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\RolesAvailable.cs",
+              "RelativeToolTip": "WalkIn Portal Backend\\Models\\RolesAvailable.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T09:22:06.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "WalkIn Portal Backend\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Controllers\\UserController.cs",
+              "RelativeToolTip": "WalkIn Portal Backend\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T09:17:38.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ExperiencedQualification.cs",
+              "DocumentMoniker": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\ExperiencedQualification.cs",
+              "RelativeDocumentMoniker": "WalkIn Portal Backend\\Models\\ExperiencedQualification.cs",
+              "ToolTip": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\ExperiencedQualification.cs",
+              "RelativeToolTip": "WalkIn Portal Backend\\Models\\ExperiencedQualification.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAwwCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T13:08:51.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateUserRequest.cs",
+              "DocumentMoniker": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\CreateUserRequest.cs",
+              "RelativeDocumentMoniker": "WalkIn Portal Backend\\Models\\CreateUserRequest.cs",
+              "ToolTip": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\CreateUserRequest.cs",
+              "RelativeToolTip": "WalkIn Portal Backend\\Models\\CreateUserRequest.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAQwBMAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T11:17:03.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EducationalQualification.cs",
+              "DocumentMoniker": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\EducationalQualification.cs",
+              "RelativeDocumentMoniker": "WalkIn Portal Backend\\Models\\EducationalQualification.cs",
+              "ToolTip": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\EducationalQualification.cs",
+              "RelativeToolTip": "WalkIn Portal Backend\\Models\\EducationalQualification.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T07:43:50.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserDetail.cs",
+              "DocumentMoniker": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\UserDetail.cs",
+              "RelativeDocumentMoniker": "WalkIn Portal Backend\\Models\\UserDetail.cs",
+              "ToolTip": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\UserDetail.cs",
+              "RelativeToolTip": "WalkIn Portal Backend\\Models\\UserDetail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T11:22:02.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FresherQualification.cs",
+              "DocumentMoniker": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\FresherQualification.cs",
+              "RelativeDocumentMoniker": "WalkIn Portal Backend\\Models\\FresherQualification.cs",
+              "ToolTip": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\FresherQualification.cs",
+              "RelativeToolTip": "WalkIn Portal Backend\\Models\\FresherQualification.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T12:18:45.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WalkinPortalContext.cs",
+              "DocumentMoniker": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\WalkinPortalContext.cs",
+              "RelativeDocumentMoniker": "WalkIn Portal Backend\\Models\\WalkinPortalContext.cs",
+              "ToolTip": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\WalkinPortalContext.cs",
+              "RelativeToolTip": "WalkIn Portal Backend\\Models\\WalkinPortalContext.cs",
+              "ViewState": "AQIAAN0AAAAAAAAAAAAUwOYAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T16:54:33.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProfessionalQualification.cs",
+              "DocumentMoniker": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\ProfessionalQualification.cs",
+              "RelativeDocumentMoniker": "WalkIn Portal Backend\\Models\\ProfessionalQualification.cs",
+              "ToolTip": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\ProfessionalQualification.cs",
+              "RelativeToolTip": "WalkIn Portal Backend\\Models\\ProfessionalQualification.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T10:55:40.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserHasJobRole.cs",
+              "DocumentMoniker": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\UserHasJobRole.cs",
+              "RelativeDocumentMoniker": "WalkIn Portal Backend\\Models\\UserHasJobRole.cs",
+              "ToolTip": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\UserHasJobRole.cs",
+              "RelativeToolTip": "WalkIn Portal Backend\\Models\\UserHasJobRole.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T16:54:56.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RolesDetail.cs",
+              "DocumentMoniker": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\RolesDetail.cs",
+              "RelativeDocumentMoniker": "WalkIn Portal Backend\\Models\\RolesDetail.cs",
+              "ToolTip": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\RolesDetail.cs",
+              "RelativeToolTip": "WalkIn Portal Backend\\Models\\RolesDetail.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAuwAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T16:53:00.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ExperiencedHasTechnologiesFamiliar.cs",
+              "DocumentMoniker": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\ExperiencedHasTechnologiesFamiliar.cs",
+              "RelativeDocumentMoniker": "WalkIn Portal Backend\\Models\\ExperiencedHasTechnologiesFamiliar.cs",
+              "ToolTip": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\ExperiencedHasTechnologiesFamiliar.cs",
+              "RelativeToolTip": "WalkIn Portal Backend\\Models\\ExperiencedHasTechnologiesFamiliar.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T16:57:11.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "WalkIn Portal Backend\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "WalkIn Portal Backend\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T05:05:11.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ExperiencedHasTechnologiesExpertise.cs",
+              "DocumentMoniker": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\ExperiencedHasTechnologiesExpertise.cs",
+              "RelativeDocumentMoniker": "WalkIn Portal Backend\\Models\\ExperiencedHasTechnologiesExpertise.cs",
+              "ToolTip": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\ExperiencedHasTechnologiesExpertise.cs",
+              "RelativeToolTip": "WalkIn Portal Backend\\Models\\ExperiencedHasTechnologiesExpertise.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T07:42:38.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\Login.cs",
+              "RelativeDocumentMoniker": "WalkIn Portal Backend\\Models\\Login.cs",
+              "ToolTip": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Models\\Login.cs",
+              "RelativeToolTip": "WalkIn Portal Backend\\Models\\Login.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T15:41:16.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "WalkIn Portal Backend\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "WalkIn Portal Backend\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-04T08:26:19.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\appsettings.json",
+              "RelativeDocumentMoniker": "WalkIn Portal Backend\\appsettings.json",
+              "ToolTip": "D:\\Zeus\\zeustraining\\WalkIn Portal Backend\\WalkIn Portal Backend\\appsettings.json",
+              "RelativeToolTip": "WalkIn Portal Backend\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-04T05:01:43.893Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/fonts.scss';
+
+.error-field{
+    font-size: 14px;
+    color: red;
+}
+
+.container {
+    margin: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $pureWhiteColor;
+    border-radius: 2px;
+
+    .information {
+        margin: 24px;
+        @include flexColumn();
+        width: 480px;
+
+        label {
+            color: $textLight;
+            font-size: $smallFont;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        input {
+            border: none;
+            color: $textDark;
+            font-family: inherit;
+            font-size: $bigFont;
+            font-weight: 600;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .horizontal-border {
+            height: 2px;
+            width: 100%;
+            background: #000000 0% 0% no-repeat padding-box;
+            opacity: 0.12;
+            margin-bottom: 40px;
+        }
+
+        .phone-number-container {
+            display: flex;
+            align-items: center;
+            height: 24px;
+
+            #phoneNumberCode {
+                border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+                width: 18px;
+                margin-left: 8px;
+                margin-right: 12px;
+            }
+
+            #phoneNumber {
+                border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+                width: 90px;
+            }
+
+            p {
+                text-align: center;
+                color: $textDark;
+                font-size: $bigFont;
+                font-weight: 600;
+            }
+        }
+
+        .resume-container {
+            display: flex;
+            align-items: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            input{
+                display: none;
+            }
+            label {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: $primaryGreen;
+                font-size: $mediumFont;
+                font-weight: 600;
+
+                .upload-icon {
+                    width: 24px;
+                }
+            }
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            height: 20px;
+            margin-top: 20px;
+
+            input {
+                appearance: none;
+                background: url('../../../assets/icons/check_box_outline.svg');
+                background-size: cover;
+                height: 24px;
+                width: 24px;
+                margin: 0px;
+
+                &:checked {
+                    background: url("../../../assets/icons/check_box.svg");
+                }
+            }
+
+            label {
+                align-items: center;
+                color: $textDark;
+                font-size: $bigFont;
+                font-weight: 600;
+                margin-bottom: 0px;
+                margin-left: 9px;
+            }
+        }
+
+        .roles-container {
+            margin-bottom: 40px;
+        }
+
+        .job-related-container {
+            margin-top: 0;
+        }
+    }
+
+
+    .profile-icon-container {
+        margin: 24px;
+
+        .profile-inner-container {
+            @include flexColumn();
+            @include flexCenter();
+            align-items: center;
+
+            .profile-upload-container {
+                @include flexColumn();
+                @include flexCenter();
+
+                a {
+                    text-decoration: none;
+                    color: $primaryGreen;
+                    font-size: $smallFont;
+                    font-weight: 600;
+                    margin-bottom: 8px;
+                    @include flexColumn();
+
+                    .profile-icon {
+                        width: 134px;
+                        margin: 0px auto 16px auto;
+                    }
+
+                    p {
+                        margin: 0px;
+                    }
+                }
+
+            }
+
+            .max-size-text {
+                margin: 0px;
+                font-size: 10px;
+                color: #757575;
+                font-weight: 600;
+            }
+
+        }
+    }
+}
+
+.next-prev-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    button {
+        background-color: $greenButton;
+        color: $buttonTextColor;
+        font-family: inherit;
+        font-size: $mediumFont;
+        font-weight: 600;
+        border: none;
+        height: 28px;
+        border-radius: 2px;
+        text-align: center;
+        box-shadow: 0px 3px 5px #0000003D;
+    }
+    .next-button{
+        // display: none;
+        width: 90px;
+    }
+}
+
+
+
+
+
+

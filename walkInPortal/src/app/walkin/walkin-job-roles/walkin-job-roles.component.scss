@@ -1,0 +1,159 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/fonts.scss';
+
+p{
+    margin: 0;
+}
+.container {
+    margin: 24px;
+    background-color: $pureWhiteColor;
+    box-shadow: 0px 4px 6px #0000003D;
+    @include flexColumn();
+    .inner-container {
+        display: flex;
+        flex-direction: column;
+        margin: 16px;
+        a{
+            margin-right: auto;
+            text-decoration: none;
+            color: $primaryGreen;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .sub-title {
+            color: $textLight;
+            font-weight: 600;
+            font-size: $smallFont;
+            margin-top: 16px;
+        }
+        .date-location{
+            display: flex;
+            margin-top: 8px;
+            .location-icon{
+                width: 14px;
+                height: 14px;
+            }
+            .location-text{
+                color: $textLight;
+                font-weight: 600;
+                font-size: $smallFont;
+            }
+            .vertical-line{
+                margin: 0px 16px 0px 16px;
+                background-color: $pureBlackColor;
+                opacity: 0.12;
+                height: 16px;
+                width: 1px;
+            }
+        }
+        p {
+            color: $textDark;
+            font-size: $mediumFont;
+            font-weight: 600;
+        }
+        .horizontal-line{
+            height: 1px;
+            width: 100%;
+            background: $pureBlackColor;
+            opacity: 0.12;
+            margin-top: 16px;
+            // margin-bottom: 16px;
+        }
+        .roles-container{
+            display: flex;
+            align-items: center;
+            // margin-top: 8px;
+            .role-icon-container{
+                width: 24px;
+                height: 24px;
+                border: 1px solid #222222;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 8px;
+                .role-icon{
+                    height: 16px;
+                    width: 16px;
+                }
+            }
+            .horizontal-flex{
+                display: flex;
+                align-items: center;
+                margin-top: 8px;
+            }
+            p{
+                margin-right: 8px;
+            }
+            .vertical-line-role{
+                margin-right: 8px;
+                background-color: $pureBlackColor;
+                opacity: 0.12;
+                height: 16px;
+                width: 1px;
+            }
+        }
+        .opportunity-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 18px;
+            width: 218px;
+            margin-top: 16px;
+            background-color: #EEDD6B;
+            border-radius: 9px;
+            color: $textDark;
+            font-size: 10px;
+            font-weight: 600;
+        }
+        .button-container{
+            display: flex;
+            justify-content: center;
+            .view-button{
+                height: 28px;
+                width: 168px;
+                margin-top: 24px;
+                font-family: inherit;
+                border: none;
+                font-weight: 600;
+                background-color: $greenButton;
+                box-shadow: 0px 3px 5px #0000003D;
+                border-radius: 2px;
+            }
+        }
+    }
+}
+
+.expires-container{
+    position: relative;
+    align-self: end;
+    right: 24px;
+    bottom: 9px;
+    height: 18px;
+    width: 107px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $expiresBackground;
+    color: $textExpired;
+    font-size: $smallFont;
+    font-weight: 600;
+    border-radius: 2px;
+    margin-bottom: -18px;
+}
+
+
+.with-expire {
+    margin-top: 33px;
+}
+
+
+@media all and (max-width: 650px) {
+    .container .inner-container .roles-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .container .inner-container .roles-container .vertical-line-role {
+        display: none;
+    }
+}

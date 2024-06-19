@@ -1,0 +1,153 @@
+<form [formGroup]="experiencedInfo">
+
+    <div class="container">
+        <div class="inner-container">
+            <div class="error-field" *ngIf="YearsOfExperience.errors?.['required'] && (YearsOfExperience.touched || YearsOfExperience.dirty)">
+                Years Of Experience is required
+            </div>
+            <div class="error-field" *ngIf="YearsOfExperience.errors?.['pattern']">
+                Years Of Experience is not valid
+            </div>
+            <label for="yearsOfExperience">Years Of Experience*</label>
+            <input type="text" name="yearsOfExperience" id="yearsOfExperience" class="short" formControlName="yearsOfExperience"/>
+            <div class="horizontal-border short"></div>
+            <div class="error-field" *ngIf="CurrentCTC.errors?.['required'] && (CurrentCTC.touched || CurrentCTC.dirty)">
+                Current CTC is required
+            </div>
+            <div class="error-field" *ngIf="CurrentCTC.errors?.['pattern']">
+                Current CTC is not valid
+            </div>
+            <label for="currentCTC">Current CTC* (In Rupees)</label>
+            <input type="text" name="currentCTC" id="currentCTC" class="short" formControlName="currentCTC" />
+            <div class="horizontal-border short"></div>
+            <div class="error-field" *ngIf="ExpectedCTC.errors?.['required'] && (ExpectedCTC.touched || ExpectedCTC.dirty)">
+                Expected CTC is required
+            </div>
+            <div class="error-field" *ngIf="ExpectedCTC.errors?.['pattern']">
+                Expected CTC is not valid
+            </div>
+            <label for="expectedCTC">Expected CTC* (In Rupees)</label>
+            <input type="text" name="expectedCTC" id="expectedCTC" class="short" formControlName="expectedCTC" />
+            <div class="horizontal-border short"></div>
+            
+            <div class="expertise-tech-container">
+                <label for="expertiseTechnology">Select All The Technologies You Expertise In*</label>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="expertiseTechnology" id="javascriptexp"  formControlName="javascriptE"/>
+                    <label for="javascriptexp">Javascript</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="expertiseTechnology" id="angularJSexp" formControlName="angularJSE"/>
+                    <label for="angularJSexp">Angular JS</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="expertiseTechnology" id="reactexp" formControlName="reactE"/>
+                    <label for="reactexp">React</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="expertiseTechnology" id="nodeJSexp" formControlName="nodeJSE"/>
+                    <label for="nodeJSexp">Node JS</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="expertiseTechnology" id="otherexp" formControlName="otherE"/>
+                    <label for="otherexp">Others</label>
+                </div>
+            </div>
+            
+            <div class="flex-horizontal">
+                <div class="flex-vertical">
+                    <label for="otherExpertiseTech">If Others, Please mention</label>
+                    <input type="text" name="otherExpertiseTech" id="otherExpertiseTech" formControlName="otherTechE"/>
+                    <div class="horizontal-border"></div>
+                </div>
+                <div class="extra-div"></div>
+                <div class="flex-vertical"></div>
+            </div>
+            
+            <div class="familiar-tech-container">
+                <label for="familiarTechnology">Select All The Technologies You Expertise In*</label>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="familiarTechnology" id="javascriptfam" formControlName="javascriptF"/>
+                    <label for="javascriptfam">Javascript</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="familiarTechnology" id="angularJSfam" formControlName="angularJSF"/>
+                    <label for="angularJSfam">Angular JS</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="familiarTechnology" id="reactfam" formControlName="reactF"/>
+                    <label for="reactfam">React</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="familiarTechnology" id="nodeJSfam" formControlName="nodeJSF"/>
+                    <label for="nodeJSfam">Node JS</label>
+                </div>
+            <div class="checkbox-container">
+                <input type="checkbox" name="familiarTechnology" id="otherfam" formControlName="otherF"/>
+                <label for="otherfam">Others</label>
+            </div>
+        </div>
+        
+        <div class="flex-horizontal">
+            <div class="flex-vertical">
+                <label for="otherFamiliarTech">If Others, Please mention</label>
+                <input type="text" name="otherFamiliarTech" id="otherFamiliarTech" formControlName="otherTechF"/>
+                <div class="horizontal-border"></div>
+            </div>
+            <div class="extra-div"></div>
+            <div class="flex-vertical"></div>
+        </div>
+        
+        <label for="onNoticePeriod">Are You Currently On Notice Period?*</label>
+        <div class="yes-no-container">
+            <div class="radio-container">
+                <input type="radio" name="onNoticePeriod" id="yesNotice" (change)="setOnNoticePeriod(true)" [checked]="experiencedInfo.get('onNoticePeriod')?.value === true" />
+                <label for="yesNotice">Yes</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" name="onNoticePeriod" id="noNotice" (change)="setOnNoticePeriod(false)" [checked]="experiencedInfo.get('onNoticePeriod')?.value === false" />
+                <label for="noNotice">No</label>
+            </div>
+        </div>
+        
+        <div class="flex-horizontal">
+            <div class="flex-vertical">
+                <label for="noticePeriodEnd">If Yes, When Will Your Notice Period End?*</label>
+                <input type="date" name="noticePeriodEnd" id="noticePeriodEnd" formControlName="noticePeriodEnd"/>
+                <div class="horizontal-border"></div>
+            </div>
+            <div class="extra-div"></div>
+            <div class="flex-vertical">
+                <label for="noticePeriodLength">How Long Is Your Notice Period?* (Mention In Months)</label>
+                <select name="noticePeriodLength" id="noticePeriodLength" formControlName="noticePeriodLength">
+                    <option value="1">1 month</option>
+                    <option value="2">2 months</option>
+                </select>
+                <div class="horizontal-border"></div>
+            </div>
+        </div>
+        
+        <label for="isAppeared">Have You Appeared For Any Test By Zeus In The Past 12 Months?*</label>
+        <div class="yes-no-container">
+            <div class="radio-container">
+                <input type="radio" name="isAppeared" id="yesAppeared" (change)="setAppearedZeusTest(true)" [checked]="experiencedInfo.get('appearedZeusTest')?.value === true" />
+                <label for="yesAppeared">Yes</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" name="isAppeared" id="noAppeared" (change)="setAppearedZeusTest(false)" [checked]="experiencedInfo.get('appearedZeusTest')?.value === false" />
+                <label for="noAppeared">No</label>
+            </div>
+        </div>
+        
+        <div class="flex-horizontal">
+            <div class="flex-vertical">
+                <label for="roleApplied">If Yes, Which Role Did You Apply For?</label>
+                <input type="text" name="roleApplied" id="roleApplied" formControlName="roleApplied"/>
+                <div class="horizontal-border last"></div>
+            </div>
+            <div class="extra-div"></div>
+            <div class="flex-vertical"></div>
+        </div>
+    </div>
+</div>
+</form>

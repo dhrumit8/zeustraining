@@ -1,0 +1,33 @@
+<form [formGroup]="loginInfo">
+<div class="container">
+    <div class="login-form">
+        <div class="blue-border-top"></div>
+        <p class="login-title">Log in</p>
+        <input formControlName="email" type="text" placeholder="Email ID*" id="email" required>
+        <div class="horizontal-border"></div>
+        <div class="error-field" *ngIf="Email.errors?.['required'] && (Email.touched || Email.dirty)">
+            Email is required
+        </div>
+        <div class="error-field" *ngIf="Email.errors?.['email']">
+            Email is not valid
+        </div>
+        <a href="#" class="forget">FORGOT EMAIL ID?</a>
+        <input type="text" placeholder="Password*" id="password">
+        <div class="horizontal-border"></div>
+        <a href="#" class="forget">FORGOT PASSWORD?</a>
+        <div class="remember-container">
+            <input type="checkbox" name="remember-me" id="remember-me">
+            <label for="remember-me">Remember Me</label>
+        </div>
+        <input (click)="loginbutton()" type="button" id="login-button" value="LOG IN">
+        <p class="not-registered-text">Not registered yet?</p>
+        <a [routerLink]="'/registration'" class="register">CREATE AN ACCOUNT</a>
+    </div>
+</div>
+</form>
+<div class="about-us-container">
+    <a id="about" class="about-contact" href="#">About</a>
+    <a id="contact-us" class="about-contact" href="#">Contact Us</a>
+</div>
+
+<router-outlet></router-outlet>

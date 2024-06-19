@@ -1,0 +1,6 @@
+@WalkIn_Portal_Backend_HostAddress = http://localhost:5185
+
+GET {{WalkIn_Portal_Backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,179 @@
+@font-face {
+  font-family: Quicksand;
+  src: url(../assets/QuicksandFont/Quicksand-VariableFont_wght.ttf);
+}
+.error-field {
+  font-size: 14px;
+  color: red;
+}
+
+.container {
+  margin: 24px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+}
+.container .information {
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+}
+.container .information label {
+  color: #666666;
+  font-size: 12px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+.container .information input {
+  border: none;
+  color: #222222;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+}
+.container .information input:focus {
+  outline: none;
+}
+.container .information .horizontal-border {
+  height: 2px;
+  width: 100%;
+  background: #000000 0% 0% no-repeat padding-box;
+  opacity: 0.12;
+  margin-bottom: 40px;
+}
+.container .information .phone-number-container {
+  display: flex;
+  align-items: center;
+  height: 24px;
+}
+.container .information .phone-number-container #phoneNumberCode {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+  width: 18px;
+  margin-left: 8px;
+  margin-right: 12px;
+}
+.container .information .phone-number-container #phoneNumber {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+  width: 90px;
+}
+.container .information .phone-number-container p {
+  text-align: center;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 600;
+}
+.container .information .resume-container {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.container .information .resume-container input {
+  display: none;
+}
+.container .information .resume-container label {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #1f7a54;
+  font-size: 14px;
+  font-weight: 600;
+}
+.container .information .resume-container label .upload-icon {
+  width: 24px;
+}
+.container .information .checkbox-container {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  margin-top: 20px;
+}
+.container .information .checkbox-container input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url("../../../assets/icons/check_box_outline.svg");
+  background-size: cover;
+  height: 24px;
+  width: 24px;
+  margin: 0px;
+}
+.container .information .checkbox-container input:checked {
+  background: url("../../../assets/icons/check_box.svg");
+}
+.container .information .checkbox-container label {
+  align-items: center;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  margin-left: 9px;
+}
+.container .information .roles-container {
+  margin-bottom: 40px;
+}
+.container .information .job-related-container {
+  margin-top: 0;
+}
+.container .profile-icon-container {
+  margin: 24px;
+}
+.container .profile-icon-container .profile-inner-container {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .profile-icon-container .profile-inner-container .profile-upload-container {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+.container .profile-icon-container .profile-inner-container .profile-upload-container a {
+  text-decoration: none;
+  color: #1f7a54;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.container .profile-icon-container .profile-inner-container .profile-upload-container a .profile-icon {
+  width: 134px;
+  margin: 0px auto 16px auto;
+}
+.container .profile-icon-container .profile-inner-container .profile-upload-container a p {
+  margin: 0px;
+}
+.container .profile-icon-container .profile-inner-container .max-size-text {
+  margin: 0px;
+  font-size: 10px;
+  color: #757575;
+  font-weight: 600;
+}
+
+.next-prev-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.next-prev-container button {
+  background-color: #3FD28B;
+  color: #1F2834;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  height: 28px;
+  border-radius: 2px;
+  text-align: center;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2392156863);
+}
+.next-prev-container .next-button {
+  width: 90px;
+}/*# sourceMappingURL=personal-info.component.css.map */

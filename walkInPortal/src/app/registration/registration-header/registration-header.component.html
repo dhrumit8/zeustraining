@@ -1,0 +1,15 @@
+<div class="container">
+    <a class="back-arrow-link">
+        <img src="../../../assets/icons/back.svg" alt="back arrow" class="back-arrow-icon">
+    </a>
+    <p class="create-text">Create An Account</p>
+    <div class="create-cancel-container">
+        <button [routerLink]="'/login'" class="cancel-button">CANCEL</button>
+        <button (click)="registerSubmitted()" [ngClass]="{'create-button-disabled': stepIndex <= 1}" [disabled]="stepIndex<=1" class="create-button">CREATE</button>
+    </div>
+</div>
+
+<div class="container-error">
+    <p [ngClass]="isAccountCreated ? '' : 'error-text'">{{displayMessage}}</p>
+</div>
+<!-- <router-outlet></router-outlet> -->

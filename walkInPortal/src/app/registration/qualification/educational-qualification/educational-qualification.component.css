@@ -1,0 +1,109 @@
+@font-face {
+  font-family: Quicksand;
+  src: url(../assets/QuicksandFont/Quicksand-VariableFont_wght.ttf);
+}
+.error-field {
+  font-size: 14px;
+  color: red;
+}
+
+.header {
+  height: 56px;
+  margin: 24px 24px 0px 24px;
+  background-color: #DBEFFF;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1607843137);
+}
+.header .vertical-line {
+  height: 56px;
+  width: 2px;
+  background-color: #000000;
+  opacity: 0.12;
+}
+.header p {
+  flex: 1;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 15px;
+}
+.header a {
+  display: flex;
+  align-items: center;
+}
+.header a img {
+  width: 24px;
+  margin: auto 4px;
+}
+
+.container {
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  margin: 0px 24px 24px 24px;
+  display: flex;
+}
+.container .inner-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 24px;
+}
+.container .inner-container .flex-horizontal {
+  display: flex;
+  justify-content: space-between;
+}
+.container .inner-container .flex-vertical {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.container .inner-container .extra-div {
+  width: 24px;
+}
+.container .inner-container label {
+  color: #666666;
+  font-size: 12px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+.container .inner-container input {
+  border: none;
+  font-family: inherit;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 600;
+}
+.container .inner-container input:focus {
+  outline: none;
+}
+.container .inner-container select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background: url("../../../../assets/icons/arrow-down.svg") no-repeat right;
+  box-sizing: border-box;
+  background-size: small;
+  color: #222222;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  height: 20px;
+}
+.container .inner-container select:focus {
+  outline: none;
+}
+.container .inner-container .horizontal-border {
+  height: 2px;
+  width: 100%;
+  background: #000000 0% 0% no-repeat padding-box;
+  opacity: 0.12;
+  margin-bottom: 40px;
+}
+.container .inner-container .short {
+  width: 180px;
+}
+.container .inner-container .short:last-child {
+  margin-bottom: 0px;
+}/*# sourceMappingURL=educational-qualification.component.css.map */
